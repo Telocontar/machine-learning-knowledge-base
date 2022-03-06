@@ -1,9 +1,9 @@
-<map version="freeplane 1.9.8">
+<map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Machine Learning" FOLDED="false" ID="ID_1989395992" CREATED="1572345760783" MODIFIED="1646085662495" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.96">
-    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false"/>
+    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -392,7 +392,7 @@
 <node TEXT="Repository structure" ID="ID_1967864272" CREATED="1610383808980" MODIFIED="1610384039076">
 <node TEXT="Example" FOLDED="true" ID="ID_748915938" CREATED="1610384063935" MODIFIED="1610384070064">
 <node TEXT="" ID="ID_960559032" CREATED="1610383835906" MODIFIED="1610384039074">
-<hook URI="Machine%20Learning_files/Practical%20Experience/Programming%20Practices/Repository_structure.png" SIZE="0.72115386" NAME="ExternalObject"/>
+<hook URI="images/Practical%20Experience/Programming%20Practices/Repository_structure.png" SIZE="0.72115386" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="https://drivendata.github.io/cookiecutter-data-science/" ID="ID_787609348" CREATED="1610383876058" MODIFIED="1610383882080" LINK="https://drivendata.github.io/cookiecutter-data-science/"/>
@@ -489,7 +489,7 @@
 <node TEXT="Theory" POSITION="right" ID="ID_220512007" CREATED="1571392981906" MODIFIED="1571393047748">
 <edge COLOR="#ff0000"/>
 <node TEXT="Allgemein" ID="ID_795018071" CREATED="1571393479505" MODIFIED="1571393512194"/>
-<node TEXT="Architecture Search" FOLDED="true" ID="ID_1061387949" CREATED="1571393043155" MODIFIED="1571393284611" HGAP_QUANTITY="18.5 pt" VSHIFT_QUANTITY="-0.75 pt">
+<node TEXT="Architecture Search" ID="ID_1061387949" CREATED="1571393043155" MODIFIED="1571393284611" HGAP_QUANTITY="18.5 pt" VSHIFT_QUANTITY="-0.75 pt">
 <node TEXT="Paper" ID="ID_502212220" CREATED="1571393295748" MODIFIED="1571393299931">
 <node TEXT="Gaier_2019 Weight Agnostic Neural Networks" ID="ID_283368997" CREATED="1571393261180" MODIFIED="1571393284610"/>
 <node TEXT="Jozefowicz_2015 An Empirical Exploration of Recurrent Network Architectures" ID="ID_425654461" CREATED="1571675297189" MODIFIED="1571675298879"/>
@@ -542,7 +542,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1572268435780">
+<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
 <node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
@@ -604,7 +604,7 @@
 <node TEXT="Backward difference coding" ID="ID_1040411722" CREATED="1575024321991" MODIFIED="1575024332291"/>
 </node>
 </node>
-<node TEXT="Links" ID="ID_751604012" CREATED="1573220500370" MODIFIED="1573220504264">
+<node TEXT="Links" ID="ID_751604012" CREATED="1573220500370" MODIFIED="1646573535263" HGAP_QUANTITY="-17.5 pt" VSHIFT_QUANTITY="-259.49999 pt">
 <node TEXT="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159" ID="ID_358179075" CREATED="1573220505844" MODIFIED="1573220520348" LINK="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159"/>
 <node TEXT="https://web.archive.org/web/20160121143437/http://www.ats.ucla.edu/stat/r/library/contrast_coding.htm" ID="ID_1116045981" CREATED="1573464647019" MODIFIED="1573464660539" LINK="https://web.archive.org/web/20160121143437/http://www.ats.ucla.edu/stat/r/library/contrast_coding.htm"/>
 <node TEXT="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809" ID="ID_266364238" CREATED="1606204965199" MODIFIED="1606204971196" LINK="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809"/>
@@ -641,7 +641,7 @@
 <node TEXT="Z-score normalization: (x-d)/e; x=data point, d=mean, e=std dev" ID="ID_241424880" CREATED="1574698236318" MODIFIED="1574698302739"/>
 <node TEXT="Which algorithm needs feature normalization" ID="ID_130771322" CREATED="1637921094144" MODIFIED="1637921107934">
 <node TEXT="feature_normalization_algorithms.png" ID="ID_1020526224" CREATED="1637921157293" MODIFIED="1637921157314">
-<hook URI="Machine%20Learning_files/Data%20structure%20_representation/feature_normalization_algorithms.png" SIZE="0.88495576" NAME="ExternalObject"/>
+<hook URI="images/Data%20structure%20_representation/feature_normalization_algorithms.png" SIZE="0.88495576" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -690,13 +690,13 @@
 </node>
 </node>
 </node>
-<node TEXT="Links" ID="ID_721509425" CREATED="1579008921487" MODIFIED="1579008923757">
+<node TEXT="Links" FOLDED="true" ID="ID_721509425" CREATED="1579008921487" MODIFIED="1579008923757">
 <node TEXT="https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0" ID="ID_616334729" CREATED="1579008924667" MODIFIED="1579008931254" LINK="https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0"/>
 </node>
 </node>
 </node>
 <node TEXT="Data quality" ID="ID_466448152" CREATED="1572268366587" MODIFIED="1572268371084">
-<node TEXT="Missing Data" FOLDED="true" ID="ID_1847438303" CREATED="1571393079753" MODIFIED="1571393083547">
+<node TEXT="Missing Data" ID="ID_1847438303" CREATED="1571393079753" MODIFIED="1571393083547">
 <node TEXT="Paper" ID="ID_1110021941" CREATED="1571675960960" MODIFIED="1571675962348"/>
 <node TEXT="Allgemein" ID="ID_1657823958" CREATED="1571934690454" MODIFIED="1571934693095">
 <node TEXT="Abbrevations" ID="ID_1868060849" CREATED="1582125866568" MODIFIED="1582125873247">
@@ -716,7 +716,7 @@
 <node TEXT="Links" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
 <node TEXT="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf" ID="ID_753824408" CREATED="1582125310384" MODIFIED="1582125320854" LINK="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf"/>
 </node>
-<node TEXT="Approaches" FOLDED="true" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1573469788597">
+<node TEXT="Approaches" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1573469788597">
 <node TEXT="Listwise deletion / Complete Case Analysis" ID="ID_465377571" CREATED="1582125037096" MODIFIED="1582125060355">
 <node TEXT="Approach" ID="ID_851293331" CREATED="1582125153556" MODIFIED="1582125155727">
 <node TEXT="Analyze only the complete data, drop incomplete data" ID="ID_105764765" CREATED="1582125066416" MODIFIED="1582125164072"/>
@@ -911,10 +911,10 @@
 <node TEXT="inspect the generated imputations" ID="ID_1636339515" CREATED="1582130619931" MODIFIED="1582130654064"/>
 <node TEXT="monitor convergence to detect anomalies" FOLDED="true" ID="ID_1960203183" CREATED="1582130654216" MODIFIED="1582130828161">
 <node TEXT="" ID="ID_1836018019" CREATED="1582130774567" MODIFIED="1618381777642">
-<hook URI="Machine%20Learning_files/Data%20quality/Missing%20data/MICE_convergence.png" SIZE="0.3558719" NAME="ExternalObject"/>
+<hook URI="images/Data%20quality/Missing%20data/MICE_convergence.png" SIZE="0.3558719" NAME="ExternalObject"/>
 </node>
 <node TEXT="" ID="ID_1818528565" CREATED="1582130831687" MODIFIED="1618381789972">
-<hook URI="Machine%20Learning_files/Data%20quality/Missing%20data/MICE_non-convergence.png" SIZE="0.36253777" NAME="ExternalObject"/>
+<hook URI="images/Data%20quality/Missing%20data/MICE_non-convergence.png" SIZE="0.36253777" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -934,7 +934,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Imbalanced Data" FOLDED="true" ID="ID_1534830505" CREATED="1571393542377" MODIFIED="1571393546034">
+<node TEXT="Imbalanced Data" ID="ID_1534830505" CREATED="1571393542377" MODIFIED="1571393546034">
 <node TEXT="Allgemein" ID="ID_1565819814" CREATED="1571934819033" MODIFIED="1571934821621">
 <node TEXT="Paper" ID="ID_1884924849" CREATED="1571675920147" MODIFIED="1571675921767">
 <node TEXT="Feng_2018 Class Imbalance Ensemble Learning Based on the Margin Theory" ID="ID_1565876548" CREATED="1582561682012" MODIFIED="1582561682543"/>
@@ -1227,7 +1227,7 @@
 <node TEXT="https://towardsdatascience.com/breaking-the-curse-of-small-datasets-in-machine-learning-part-1-36f28b0c044d" ID="ID_1387586080" CREATED="1574430245781" MODIFIED="1574430251970" LINK="https://towardsdatascience.com/breaking-the-curse-of-small-datasets-in-machine-learning-part-1-36f28b0c044d"/>
 </node>
 </node>
-<node TEXT="Data quality metrics/indicators" FOLDED="true" ID="ID_197276953" CREATED="1602227110233" MODIFIED="1602227141982">
+<node TEXT="Data quality metrics/indicators" ID="ID_197276953" CREATED="1602227110233" MODIFIED="1602227141982">
 <node TEXT="temp" ID="ID_1371546619" CREATED="1602227675230" MODIFIED="1602227696932">
 <node TEXT="Ratio of data to errors" ID="ID_409091558" CREATED="1602227187012" MODIFIED="1602227193962">
 <node TEXT="How many errors do you have relative to the size of your data set?" ID="ID_1104873401" CREATED="1602227264136" MODIFIED="1602227264710"/>
@@ -1302,13 +1302,13 @@
 <node TEXT="Sequence-to-Sequence (Seq2Seq)" ID="ID_310212075" CREATED="1604303020836" MODIFIED="1604303033012"/>
 </node>
 <node TEXT="Suggested use for each algorithm included in the Alibi Detect library" ID="ID_923875318" CREATED="1604303087818" MODIFIED="1604303128241">
-<hook URI="Machine%20Learning_files/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
+<hook URI="images/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
 </node>
 <node TEXT="Model Training" ID="ID_933088356" CREATED="1582541194117" MODIFIED="1597150621603">
-<node TEXT="Optimizer" FOLDED="true" ID="ID_616775163" CREATED="1574694278212" MODIFIED="1574694288253">
+<node TEXT="Optimizer" ID="ID_616775163" CREATED="1574694278212" MODIFIED="1574694288253">
 <node TEXT="Performance improvements" ID="ID_1795368973" CREATED="1574694292676" MODIFIED="1574694342087"/>
 <node TEXT="Optimizer" ID="ID_693723983" CREATED="1574694301700" MODIFIED="1574694356967">
 <node TEXT="Adadelta" ID="ID_1516306544" CREATED="1574694357676" MODIFIED="1574694372120"/>
@@ -1325,7 +1325,7 @@
 </node>
 <node TEXT="TODO: sinnvoller einordnen" ID="ID_571125075" CREATED="1576597780510" MODIFIED="1576597785845"/>
 </node>
-<node TEXT="Regularization" FOLDED="true" ID="ID_612913897" CREATED="1574699047180" MODIFIED="1594382453646">
+<node TEXT="Regularization" ID="ID_612913897" CREATED="1574699047180" MODIFIED="1594382453646">
 <node TEXT="Weight Decay" ID="ID_1211137654" CREATED="1574699057677" MODIFIED="1574699060682"/>
 <node TEXT="Dropout" ID="ID_1943032122" CREATED="1574699060965" MODIFIED="1574699064305"/>
 <node TEXT="Data augmentation (?) TODO" ID="ID_1832822310" CREATED="1574699064605" MODIFIED="1574699081218"/>
@@ -1339,7 +1339,7 @@
 <node TEXT="TODO: kurzbeschreibung einzelner methoden" ID="ID_46650078" CREATED="1576597831333" MODIFIED="1576597861649"/>
 <node TEXT="https://github.com/adeshpande3/Machine-Learning-Links-And-Lessons-Learned" ID="ID_724043304" CREATED="1603705963562" MODIFIED="1603705969906" LINK="https://github.com/adeshpande3/Machine-Learning-Links-And-Lessons-Learned"/>
 </node>
-<node TEXT="Hyperparameter Optimization Search Strategies" FOLDED="true" ID="ID_187882869" CREATED="1579250885374" MODIFIED="1597150621603">
+<node TEXT="Hyperparameter Optimization Search Strategies" ID="ID_187882869" CREATED="1579250885374" MODIFIED="1597150621603">
 <node TEXT="Allgemein" ID="ID_771130803" CREATED="1594382210273" MODIFIED="1594382213790">
 <node TEXT="https://towardsdatascience.com/hyperparameter-search-with-iterative-sweeps-3799df1a4d45" ID="ID_1159293509" CREATED="1594382215249" MODIFIED="1594382224437" LINK="https://towardsdatascience.com/hyperparameter-search-with-iterative-sweeps-3799df1a4d45"/>
 <node TEXT="Iterative sweeps" ID="ID_1390617447" CREATED="1594382309120" MODIFIED="1594382316003">
@@ -1397,7 +1397,7 @@
 <node TEXT="Overview" ID="ID_1966975113" CREATED="1645531266828" MODIFIED="1645531368362">
 <node TEXT="Visual overview" FOLDED="true" ID="ID_1172521034" CREATED="1645531376354" MODIFIED="1645531380295">
 <node TEXT="https://towardsdatascience.com/fantastic-activation-functions-and-when-to-use-them-481fe2bb2bde" ID="ID_1803585297" CREATED="1645531273557" MODIFIED="1645531414800" LINK="https://towardsdatascience.com/fantastic-activation-functions-and-when-to-use-them-481fe2bb2bde">
-<hook URI="Machine%20Learning_files/Model%20Training/activation_functions.png" SIZE="0.42857143" NAME="ExternalObject"/>
+<hook URI="images/Model%20Training/activation_functions.png" SIZE="0.42857143" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -1476,12 +1476,12 @@
 <node TEXT="Accuracy" ID="ID_1063187839" CREATED="1610957638906" MODIFIED="1610957643236"/>
 <node TEXT="AUC of ROC" FOLDED="true" ID="ID_1409022853" CREATED="1610957643806" MODIFIED="1610957649889">
 <node TEXT="" ID="ID_133613424" CREATED="1610958181019" MODIFIED="1610958190739">
-<hook URI="Machine%20Learning_files/Model%20Training/AUC.png" SIZE="0.85714287" NAME="ExternalObject"/>
+<hook URI="images/Model%20Training/AUC.png" SIZE="0.85714287" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Precision &amp; Recall" FOLDED="true" ID="ID_307486533" CREATED="1610957650415" MODIFIED="1610957713026">
 <node TEXT="" ID="ID_1648897308" CREATED="1610957720259" MODIFIED="1610957731456">
-<hook URI="Machine%20Learning_files/Model%20Training/Precision_Recall.png" SIZE="0.89153045" NAME="ExternalObject"/>
+<hook URI="images/Model%20Training/Precision_Recall.png" SIZE="0.89153045" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Recall" ID="ID_3987407" CREATED="1610957658326" MODIFIED="1610957659986"/>
@@ -1575,7 +1575,7 @@
 <node TEXT="Partial Dependence Plot (PDP)" ID="ID_1667336836" CREATED="1575299705920" MODIFIED="1575299716974">
 <node TEXT=" shows the marginal effect one or two features have on the predicted outcome of a machine learning model (usually a plot of feature vs. outcome)&#xa;&#xa;1) Select feature. 2) Define interval for feature values. 3) Per interval value:a) Replace feature with interval value and b) average predictions. 4) Draw curve" ID="ID_674877226" CREATED="1575545811418" MODIFIED="1575645066134">
 <node TEXT="PDP_plot.png" ID="ID_1132398461" CREATED="1575646061727" MODIFIED="1575646061727">
-<hook URI="Machine%20Learning_files/ExplainableAI/PDP_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/PDP_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Pros:&#xa;- interpretation is clear&#xa;- easy to implement&#xa;- causal interpretation" ID="ID_54183823" CREATED="1575546644335" MODIFIED="1575546672595"/>
@@ -1584,7 +1584,7 @@
 <node TEXT="Individual Conditional Expectation (ICE)" ID="ID_533643533" CREATED="1575299722544" MODIFIED="1575299737373">
 <node TEXT=" ICE plot displays one line per instance that shows how the instance’s prediction changes when a feature changes" FOLDED="true" ID="ID_802792880" CREATED="1575644464536" MODIFIED="1575644522819">
 <node TEXT="ICE_plot.png" ID="ID_1994704465" CREATED="1575645923706" MODIFIED="1575646009425">
-<hook URI="Machine%20Learning_files/ExplainableAI/ICE_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/ICE_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Pros:&#xa;- more intuitive than PDP&#xa;- can uncover heterogenous relationships" ID="ID_1493586193" CREATED="1575644638371" MODIFIED="1575644677183"/>
@@ -1593,7 +1593,7 @@
 <node TEXT="Accumulated Local Effects (ALE) plot" ID="ID_1578661267" CREATED="1575299737616" MODIFIED="1575299753141">
 <node TEXT="Accumulated local effects describe how features influence the prediction of a machine learning model on average&#xa;&#xa; “Let me show you how the model predictions change in a small “window” of the featurearound v for data instances in that window.”" FOLDED="true" ID="ID_1565428290" CREATED="1575645299631" MODIFIED="1575645492338">
 <node TEXT="ALE_plot.png" ID="ID_758456546" CREATED="1575645869866" MODIFIED="1575646024515">
-<hook URI="Machine%20Learning_files/ExplainableAI/ALE_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/ALE_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Pros:&#xa;- ALE plots unbiased&#xa;- fast to compute&#xa;- interpreation is clear&#xa;- preferred over PDP plots" ID="ID_352550474" CREATED="1575645124473" MODIFIED="1575645191572"/>
@@ -1619,14 +1619,14 @@
 <node TEXT="Weight plot" ID="ID_1348910744" CREATED="1575547375974" MODIFIED="1575547382577">
 <node TEXT="Weight estimates (with variance) on x-axis, features on y-axis" FOLDED="true" ID="ID_1350008853" CREATED="1575547402509" MODIFIED="1575547439377">
 <node TEXT="weight_plot.png" ID="ID_631480231" CREATED="1575646142749" MODIFIED="1575646142749">
-<hook URI="Machine%20Learning_files/ExplainableAI/weight_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/weight_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
 <node TEXT="Effect plot" ID="ID_1504577012" CREATED="1575547448173" MODIFIED="1575547451672">
 <node TEXT="Similar to Weight plot, but weights are multiplied with feature values -&gt; boxplot indicating the effect for each feature" FOLDED="true" ID="ID_250677244" CREATED="1575547457958" MODIFIED="1575547502312">
 <node TEXT="effect_plot.png" ID="ID_189098456" CREATED="1575646219422" MODIFIED="1575646219422">
-<hook URI="Machine%20Learning_files/ExplainableAI/effect_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/effect_plot.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -1643,7 +1643,7 @@
 <node TEXT="Generalized Additive Model (GAM)" ID="ID_1913547254" CREATED="1575295382879" MODIFIED="1575295607841">
 <node TEXT="Extension of linear regression:&#xa;model target by a sum of arbitrary (non-linear) functions of each feature" FOLDED="true" ID="ID_1611652685" CREATED="1575295690108" MODIFIED="1575295789027">
 <node TEXT="GAM_example.png" ID="ID_375497962" CREATED="1575646396156" MODIFIED="1575646396156">
-<hook URI="Machine%20Learning_files/ExplainableAI/GAM_example.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/GAM_example.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -1659,7 +1659,7 @@
 <node TEXT="Decision trees" ID="ID_480954349" CREATED="1574956406944" MODIFIED="1574956415123">
 <node TEXT="split data multiple times according to certain cutoff values in the features" ID="ID_1263078684" CREATED="1575297480083" MODIFIED="1575297491746">
 <node TEXT="decision_tree_example.png" ID="ID_1127722838" CREATED="1575646448807" MODIFIED="1575646448807">
-<hook URI="Machine%20Learning_files/ExplainableAI/decision_tree_example.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/decision_tree_example.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Pros:&#xa;- tree structure ideal for capturing interactions&#xa;- natural visualization&#xa;- trees create good explanations&#xa;- data ends up in distinct groups that are often easier to understand" ID="ID_1113739269" CREATED="1575638766017" MODIFIED="1575638899414"/>
@@ -1675,7 +1675,7 @@
 <node TEXT="Sequential covering" ID="ID_560082510" CREATED="1575297567562" MODIFIED="1575297571777">
 <node TEXT="iteratively learns rules and removes the data points that are covered by the new rule" FOLDED="true" ID="ID_1420125052" CREATED="1575297652387" MODIFIED="1575297659880">
 <node TEXT="sequential_covering.png" ID="ID_459530394" CREATED="1575646547176" MODIFIED="1575646547176">
-<hook URI="Machine%20Learning_files/ExplainableAI/sequential_covering.png" SIZE="0.5714286" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/sequential_covering.png" SIZE="0.5714286" NAME="ExternalObject"/>
 </node>
 </node>
 </node>
@@ -1686,7 +1686,7 @@
 <node TEXT="RuleFit" ID="ID_323446303" CREATED="1574956422703" MODIFIED="1574956426667">
 <node TEXT="learns sparse linear models that include automatically detected interaction effects in the form of decision rules" FOLDED="true" ID="ID_1274456558" CREATED="1575297734971" MODIFIED="1575297738949">
 <node TEXT="RuleFit.png" ID="ID_871382102" CREATED="1575646661992" MODIFIED="1575646661992">
-<hook URI="Machine%20Learning_files/ExplainableAI/RuleFit.png" SIZE="1.0" NAME="ExternalObject"/>
+<hook URI="images/ExplainableAI/RuleFit.png" SIZE="1.0" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="Pros:&#xa;- automatically adds feature interactions&#xa;- rules easy to interpret" ID="ID_1106261100" CREATED="1575639499696" MODIFIED="1575639850367"/>
@@ -2024,7 +2024,7 @@
 </node>
 </node>
 <node TEXT="ML Models" ID="ID_335153964" CREATED="1578929840695" MODIFIED="1578929881020">
-<node TEXT="GANs" ID="ID_72846432" CREATED="1574694495347" MODIFIED="1574694497965">
+<node TEXT="GANs" FOLDED="true" ID="ID_72846432" CREATED="1574694495347" MODIFIED="1574694497965">
 <node TEXT="Allgemein" ID="ID_438159942" CREATED="1574694499588" MODIFIED="1574694510173">
 <node TEXT="https://deephunt.in/the-gan-zoo-79597dc8c347?gi=64d5f8aa5a9d" ID="ID_1428981581" CREATED="1574694510988" MODIFIED="1574694518250" LINK="https://deephunt.in/the-gan-zoo-79597dc8c347?gi=64d5f8aa5a9d"/>
 <node TEXT="https://developers.google.com/machine-learning/gan" ID="ID_1582286960" CREATED="1595598215323" MODIFIED="1595598226953" LINK="https://developers.google.com/machine-learning/gan"/>
@@ -2036,13 +2036,13 @@
 </node>
 </node>
 <node TEXT="DeepForest" ID="ID_216805587" CREATED="1579093317860" MODIFIED="1579093323915"/>
-<node TEXT="CNNs" ID="ID_91167341" CREATED="1582540531044" MODIFIED="1582540546679">
+<node TEXT="CNNs" FOLDED="true" ID="ID_91167341" CREATED="1582540531044" MODIFIED="1582540546679">
 <node TEXT="Allgemein" ID="ID_719436351" CREATED="1582540618293" MODIFIED="1582540620495"/>
 <node TEXT="Medical application" ID="ID_154849906" CREATED="1582540550646" MODIFIED="1582540554887">
 <node TEXT="Ronneberger_2015 U-Net - Convolutional Networks for Biomedical Image Segmentation" ID="ID_1236790424" CREATED="1582540534454" MODIFIED="1582540615981"/>
 </node>
 </node>
-<node TEXT="Sequence Learning Methods" ID="ID_49006062" CREATED="1580978952911" MODIFIED="1580978959811">
+<node TEXT="Sequence Learning Methods" FOLDED="true" ID="ID_49006062" CREATED="1580978952911" MODIFIED="1580978959811">
 <node TEXT="Recurrent Neural Networks  (RNN)" ID="ID_1205384308" CREATED="1580975970892" MODIFIED="1582541117469">
 <node TEXT="Allgemein" ID="ID_325375338" CREATED="1580977284153" MODIFIED="1580977287240">
 <node TEXT="class of artificial neural networks where connections between nodes form a directed graph along a temporal sequence. This allows it to exhibit temporal dynamic behavior. RNNs can use their internal state (memory) to process variable length sequences of inputs." ID="ID_1706647104" CREATED="1580977244360" MODIFIED="1580977263988"/>
@@ -2084,10 +2084,10 @@
 <node TEXT="Approaches" ID="ID_1784213829" CREATED="1580998290418" MODIFIED="1580998295135">
 <node TEXT="Overview" ID="ID_232542317" CREATED="1581092324122" MODIFIED="1581092326893">
 <node TEXT="" ID="ID_465201395" CREATED="1581092272876" MODIFIED="1581092332722">
-<hook URI="Machine%20Learning_files/Multimodal%20Learning/Fusion%20models%20for%20multimodal%20learning.png" SIZE="0.40349698" NAME="ExternalObject"/>
+<hook URI="images/Multimodal%20Learning/Fusion%20models%20for%20multimodal%20learning.png" SIZE="0.40349698" NAME="ExternalObject"/>
 </node>
 <node TEXT="Esteva_2019 A guide to deep learning in healthcare" ID="ID_661553062" CREATED="1582528689554" MODIFIED="1582528731613">
-<hook URI="Machine%20Learning_files/Multimodal%20Learning/Multimodal_deep_learning.png" SIZE="0.9868421" NAME="ExternalObject"/>
+<hook URI="images/Multimodal%20Learning/Multimodal_deep_learning.png" SIZE="0.9868421" NAME="ExternalObject"/>
 </node>
 </node>
 <node TEXT="early fusion / data-level fusion" ID="ID_866448989" CREATED="1580998296621" MODIFIED="1580998623062">
@@ -2133,7 +2133,7 @@
 <node TEXT="Flexible Imputation of Missing Data" ID="ID_962822235" CREATED="1582123228115" MODIFIED="1582123237486"/>
 </node>
 </node>
-<node TEXT="Feature learning algorithms" FOLDED="true" ID="ID_631629490" CREATED="1581492184057" MODIFIED="1581492190610">
+<node TEXT="Feature learning algorithms" ID="ID_631629490" CREATED="1581492184057" MODIFIED="1581492190610">
 <node TEXT="PCA" ID="ID_1629318713" CREATED="1581492191403" MODIFIED="1581492192718"/>
 <node TEXT="k-means" ID="ID_441530649" CREATED="1581492193051" MODIFIED="1581492194739"/>
 <node TEXT="ICA (independent component analysis" ID="ID_1953443250" CREATED="1581492194953" MODIFIED="1581492203733"/>
@@ -2156,7 +2156,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Clustering" FOLDED="true" ID="ID_296733797" CREATED="1583760030502" MODIFIED="1583760037562">
+<node TEXT="Clustering" ID="ID_296733797" CREATED="1583760030502" MODIFIED="1583760037562">
 <node TEXT="Approaches" ID="ID_127328841" CREATED="1583760040077" MODIFIED="1583760042059">
 <node TEXT="k-means" ID="ID_1967016703" CREATED="1583760091404" MODIFIED="1583760134637">
 <node TEXT="Approach" ID="ID_1519888650" CREATED="1583760910054" MODIFIED="1583760911994">
