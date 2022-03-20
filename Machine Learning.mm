@@ -3,7 +3,7 @@
 <node TEXT="Machine Learning" FOLDED="false" ID="ID_1989395992" CREATED="1572345760783" MODIFIED="1646085662495" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.96">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -2205,6 +2205,26 @@
 <node TEXT="Approach" ID="ID_1611013816" CREATED="1583763527593" MODIFIED="1583763530094"/>
 <node TEXT="Advantages" ID="ID_1100856861" CREATED="1583763530266" MODIFIED="1583763532951"/>
 <node TEXT="Disadvantages" ID="ID_1619968333" CREATED="1583763533202" MODIFIED="1583763537166"/>
+</node>
+<node TEXT="t-SNE" ID="ID_1516343027" CREATED="1647793642281" MODIFIED="1647793645309">
+<node TEXT="Approach" ID="ID_1917523686" CREATED="1583763527593" MODIFIED="1583763530094"/>
+<node TEXT="Advantages" ID="ID_202245456" CREATED="1583763530266" MODIFIED="1583763532951">
+<node TEXT="preserve local neighborhoods" ID="ID_263781400" CREATED="1647793708558" MODIFIED="1647793718872"/>
+<node TEXT="smaller distance from input can be mapped to larger distance in output" ID="ID_1918106369" CREATED="1647793755930" MODIFIED="1647793769652"/>
+<node TEXT="leads to better space utilization for visualization" ID="ID_787092539" CREATED="1647793769923" MODIFIED="1647793781660"/>
+</node>
+<node TEXT="Disadvantages" ID="ID_1923892975" CREATED="1583763533202" MODIFIED="1583763537166">
+<node TEXT="nearby points will dominate the embedding" ID="ID_1044682374" CREATED="1647793720351" MODIFIED="1647793730265"/>
+</node>
+</node>
+<node TEXT="PCA" ID="ID_945386806" CREATED="1647793645538" MODIFIED="1647793648947">
+<node TEXT="Approach" ID="ID_887692176" CREATED="1583763527593" MODIFIED="1583763530094"/>
+<node TEXT="Advantages" ID="ID_1403522957" CREATED="1583763530266" MODIFIED="1583763532951">
+<node TEXT="preserve pairwise distance" ID="ID_241106712" CREATED="1647793667795" MODIFIED="1647793688553"/>
+</node>
+<node TEXT="Disadvantages" ID="ID_1723893536" CREATED="1583763533202" MODIFIED="1583763537166">
+<node TEXT="faraway points will dominate the embedding" ID="ID_1259980076" CREATED="1647793690933" MODIFIED="1647793703322"/>
+</node>
 </node>
 </node>
 <node TEXT="Links" ID="ID_309011803" CREATED="1583760223328" MODIFIED="1583760225151">
