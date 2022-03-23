@@ -185,7 +185,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
+<node TEXT="Feature engineering" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
 <node TEXT="Process of using domain knowledge of the data to create features (manually or automatic)" ID="ID_1306715748" CREATED="1578931070053" MODIFIED="1578931187700">
 <node TEXT="TODO" ID="ID_389082671" CREATED="1578930996910" MODIFIED="1578930998602"/>
 <node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004"/>
@@ -204,6 +204,9 @@
 </node>
 <node TEXT="https://blog.featurelabs.com/deep-feature-synthesis/" ID="ID_1753526512" CREATED="1578933697506" MODIFIED="1578933697506" LINK="https://blog.featurelabs.com/deep-feature-synthesis/"/>
 <node TEXT="https://paperswithcode.com/task/automated-feature-engineering" ID="ID_1706376453" CREATED="1579090302040" MODIFIED="1579090309587" LINK="https://paperswithcode.com/task/automated-feature-engineering"/>
+<node TEXT="TODO: read" ID="ID_1403543768" CREATED="1648016666943" MODIFIED="1648016668917">
+<node TEXT="https://towardsdatascience.com/feature-engineering-for-machine-learning-434c9b4912c6" ID="ID_524363725" CREATED="1648016651851" MODIFIED="1648016661535" LINK="https://towardsdatascience.com/feature-engineering-for-machine-learning-434c9b4912c6"/>
+</node>
 </node>
 </node>
 </node>
