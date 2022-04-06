@@ -3,7 +3,7 @@
 <node TEXT="Machine Learning" FOLDED="false" ID="ID_1989395992" CREATED="1572345760783" MODIFIED="1646577182652" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.96">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff"/>
+    <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -442,7 +442,7 @@
 <node TEXT="https://howtolearnmachinelearning.com/datasets/" ID="ID_1696044297" CREATED="1644507137613" MODIFIED="1644507151260" LINK="https://howtolearnmachinelearning.com/datasets/"/>
 <node TEXT="https://www.tensorflow.org/datasets/catalog/overview" ID="ID_1648890024" CREATED="1645431901092" MODIFIED="1645431908475" LINK="https://www.tensorflow.org/datasets/catalog/overview"/>
 </node>
-<node TEXT="jupyter notebook" FOLDED="true" ID="ID_294264619" CREATED="1574414036329" MODIFIED="1594980891613">
+<node TEXT="jupyter notebook" ID="ID_294264619" CREATED="1574414036329" MODIFIED="1594980891613">
 <node TEXT="nbextensions" ID="ID_329314529" CREATED="1574414045390" MODIFIED="1594980891613">
 <node TEXT="Installation:" ID="ID_881886599" CREATED="1574414097834" MODIFIED="1574414103118">
 <node TEXT="pip install jupyter_contrib_nbextensions" ID="ID_224175242" CREATED="1574414115409" MODIFIED="1574414129182"/>
@@ -468,6 +468,384 @@
 <node TEXT="Quickguide: View -&gt; Cell toolbar -&gt; Slideshow&#xa;Select cells as slide, sub-slide, skip etc.&#xa;Start slideshow via the Button in the toolbar" ID="ID_439226985" CREATED="1574419818781" MODIFIED="1574419877366"/>
 </node>
 </node>
+</node>
+<node TEXT="Tips &amp; tricks" ID="ID_942565908" CREATED="1649228085472" MODIFIED="1649228089307">
+<node TEXT="Shortcuts" ID="ID_1954944139" CREATED="1649228134564" MODIFIED="1649228137464">
+<node TEXT="Ctrl + Shift + P: command palette" ID="ID_1793569538" CREATED="1649228099482" MODIFIED="1649228194094"/>
+<node TEXT="Shift + M: Merge multiple cells" ID="ID_1836412706" CREATED="1649228115378" MODIFIED="1649228202465"/>
+<node TEXT="Ctrl + Shift + - :  split the current cell into two from where your cursor is" ID="ID_437763025" CREATED="1649228172404" MODIFIED="1649228246200"/>
+</node>
+<node TEXT="display all statements within a cell" ID="ID_1125162031" CREATED="1649228255292" MODIFIED="1649228274924">
+<node ID="ID_1183374022" CREATED="1649228337596" MODIFIED="1649228337596"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre class=" language-python"><code class=" language-python"><span class="token keyword">from</span> IPython<span class="token punctuation">.</span>core<span class="token punctuation">.</span>interactiveshell <span class="token keyword">import</span> InteractiveShell</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1346814541" CREATED="1649228337596" MODIFIED="1649228337596"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre class=" language-python"><code class=" language-python">InteractiveShell<span class="token punctuation">.</span>ast_node_interactivity <span class="token operator">=</span> <span class="token string">&quot;all&quot;</span></code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Plotting in notebooks" FOLDED="true" ID="ID_694079515" CREATED="1649229285050" MODIFIED="1649229289712">
+<node ID="ID_776827804" CREATED="1649229291050" MODIFIED="1649229291050" LINK="https://matplotlib.org/"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://matplotlib.org/">matplotlib</a>&nbsp;(the de-facto standard), activated with <code>%matplotlib inline</code>&nbsp;– Here’s a Dataquest <a href="https://www.dataquest.io/blog/matplotlib-tutorial/">Matplotlib Tutorial</a>.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1493528409" CREATED="1649229291050" MODIFIED="1649229291050"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <code>%matplotlib notebook</code>&nbsp;provides interactivity but can be a little slow, since rendering is done server-side.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1836466760" CREATED="1649229291063" MODIFIED="1649229291063" LINK="https://seaborn.pydata.org/"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://seaborn.pydata.org/">Seaborn</a>&nbsp;is built over Matplotlib and makes building more attractive plots easier. Just by importing Seaborn, your matplotlib plots are made ‘prettier’ without any code modification.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1099528212" CREATED="1649229291068" MODIFIED="1649229291068" LINK="https://github.com/mpld3/mpld3"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://github.com/mpld3/mpld3">mpld3</a>&nbsp;provides alternative renderer (using d3) for matplotlib code. Quite nice, though incomplete.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_192400244" CREATED="1649229291071" MODIFIED="1649229291071" LINK="https://bokeh.pydata.org/en/latest/"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://bokeh.pydata.org/en/latest/">bokeh</a>&nbsp;is a better option for building interactive plots.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_417540106" CREATED="1649229291074" MODIFIED="1649229291074" LINK="https://plot.ly/"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://plot.ly/">plot.ly</a>&nbsp;can generate nice plots – this used to be a paid service only but was recently open sourced.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1411324635" CREATED="1649229291078" MODIFIED="1649229291078" LINK="https://github.com/altair-viz/altair"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="https://github.com/altair-viz/altair">Altair</a>&nbsp;is a relatively new declarative visualization library for Python. It’s easy to use and makes great looking plots, however the ability to customize those plots is not nearly as powerful as in Matplotlib.
+      </li>
+    </ul>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="IPython Magic Commands" ID="ID_1739430700" CREATED="1649229387286" MODIFIED="1649229395821">
+<node TEXT="%lsmagic&#xa;list all magic commands" ID="ID_224485725" CREATED="1649229398676" MODIFIED="1649229423584"/>
+<node TEXT="%run&#xa;execute python code from .py/.ipynb files" ID="ID_629521836" CREATED="1649229449596" MODIFIED="1649229634362">
+<node ID="ID_1218234670" CREATED="1649229626943" MODIFIED="1649229626943"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code><span spellcheck="true"># this will execute and show the output from</span><br class="rm"/><span spellcheck="true"># all code cells of the specified notebook</span><br class="rm"/>%run ./two-histograms.ipynb</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="%load: Insert the code from an external script" ID="ID_1992702018" CREATED="1649229599565" MODIFIED="1649229609798">
+<node ID="ID_198140352" CREATED="1649229615768" MODIFIED="1649229615768"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code><span spellcheck="true"># Before Running</span><br class="rm"/>%load ./hello_world.py</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1302007761" CREATED="1649229615768" MODIFIED="1649229615768"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code><span spellcheck="true"># After Running</span><br class="rm"/><span spellcheck="true"># %load ./hello_world.py</span><br class="rm"/>if __name__ == &quot;__main__&quot;:<br class="rm"/> print(&quot;Hello World!&quot;)</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_903847055" CREATED="1649229615772" MODIFIED="1649229615772"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>Hello World!</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="%who: List all variables of global scope&#xa;The %who command without any arguments will list all variables that existing in the global scope. Passing a parameter like str will list only variables of that type." ID="ID_479262986" CREATED="1649229654212" MODIFIED="1649229684264">
+<node ID="ID_1179851390" CREATED="1649229689846" MODIFIED="1649229689846"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>one = &quot;for the money&quot;<br class="rm"/>two = &quot;for the show&quot;<br class="rm"/>three = &quot;to get ready now go cat go&quot;<br class="rm"/>%who str</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1763390247" CREATED="1649229689846" MODIFIED="1649229689846"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>one three two</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="%%writefile and %pycat: Export the contents of a cell/Show the contents of an external script" ID="ID_1712389752" CREATED="1649229699285" MODIFIED="1649229715774">
+<node ID="ID_1280117053" CREATED="1649229729336" MODIFIED="1649229729336"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>%%writefile pythoncode.py <br class="rm"/>import numpy<br class="rm"/>def append_if_not_exists(arr, x):<br class="rm"/> if x not in arr:<br class="rm"/> arr.append(x)def some_useless_slow_function():<br class="rm"/> arr = list()<br class="rm"/>    for i in range(10000):<br class="rm"/>        x = numpy.random.randint(0, 10000)<br class="rm"/>    append_if_not_exists(arr, x)</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1517683407" CREATED="1649229729336" MODIFIED="1649229729336"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>Writing pythoncode.py</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1050775537" CREATED="1649229729340" MODIFIED="1649229729340"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>%pycat pythoncode.py</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1890925615" CREATED="1649229729342" MODIFIED="1649229729342"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>import numpy<br class="rm"/>def append_if_not_exists(arr, x):<br class="rm"/> if x not in arr:<br class="rm"/> arr.append(x)def some_useless_slow_function():<br class="rm"/> arr = list()<br class="rm"/> for i in range(10000):<br class="rm"/> x = numpy.random.randint(0, 10000)<br class="rm"/> append_if_not_exists(arr, x)</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="%prun: Show how much time your program spent in each function&#xa;%prun &lt;function&gt;" FOLDED="true" ID="ID_859172113" CREATED="1649229753899" MODIFIED="1649229793603">
+<node ID="ID_415788714" CREATED="1649229799287" MODIFIED="1649229799287"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>%prun some_useless_slow_function()</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1447314873" CREATED="1649229799288" MODIFIED="1649229799288"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>26324 function calls in 0.556 seconds <br class="rm"/>Ordered by: internal time <br class="rm"/>ncalls tottime percall cumtime percall filename:lineno(function)<br class="rm"/>10000 0.527 0.000 0.528 0.000 :2(append_if_not_exists)<br class="rm"/>10000 0.022 0.000 0.022 0.000 {method 'randint' of 'mtrand.RandomState' objects}<br class="rm"/>1 0.006 0.006 0.556 0.556 :6(some_useless_slow_function)<br class="rm"/>6320 0.001 0.000 0.001 0.000 {method 'append' of 'list' objects}<br class="rm"/>1 0.000 0.000 0.556 0.556 :1()<br class="rm"/>1 0.000 0.000 0.556 0.556 {built-in method exec}<br class="rm"/>1 0.000 0.000 0.000 0.000 {method 'disable' of '_lsprof.Profiler' objects}</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="%pdb: Debugging" ID="ID_571197605" CREATED="1649229815484" MODIFIED="1649229825471">
+<node ID="ID_1084153143" CREATED="1649229834769" MODIFIED="1649229834769" LINK="https://docs.python.org/3.5/library/pdb.html#debugger-commands"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      You can view <a href="https://docs.python.org/3.5/library/pdb.html#debugger-commands">a list of accepted commands for <code>pdb</code>&nbsp;here</a>.
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+<node TEXT="Run code from a different kernel in a notebook: at the start of each cell: %%&lt;kernel&gt;&#xa;&#xa;    %%bash&#xa;    %%HTML&#xa;    %%python2&#xa;    %%python3&#xa;    %%ruby&#xa;    %%perl" ID="ID_1432744271" CREATED="1649229943263" MODIFIED="1649230025333"/>
+</node>
+<node TEXT="Other" ID="ID_596523597" CREATED="1649229876819" MODIFIED="1649229882639">
+<node TEXT="Suppress output of final function: add a semicolon at the end" ID="ID_263135677" CREATED="1649229863381" MODIFIED="1649229898397"/>
+<node TEXT="Executing shell commands: !&lt;command&gt;" ID="ID_1931558874" CREATED="1649229908327" MODIFIED="1649229921651">
+<node ID="ID_192714576" CREATED="1649229928334" MODIFIED="1649229928334"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>!ls *.csv</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+<node ID="ID_1650561596" CREATED="1649229928335" MODIFIED="1649229928335"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <pre><code>nba_2016.csv titanic.csv pixar_movies.csv whitehouse_employees.csv</code></pre>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
+</node>
+</node>
+<node TEXT="Links" ID="ID_902653463" CREATED="1649226603213" MODIFIED="1649226608206">
+<node TEXT="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/" ID="ID_618541781" CREATED="1649226610537" MODIFIED="1649226623890" LINK="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/"/>
+<node TEXT="http://blog.juliusschulz.de/blog/ultimate-ipython-notebook" ID="ID_838299577" CREATED="1649228365986" MODIFIED="1649228371471" LINK="http://blog.juliusschulz.de/blog/ultimate-ipython-notebook"/>
 </node>
 </node>
 <node TEXT="Courses, Learning paths, etc." FOLDED="true" ID="ID_826247402" CREATED="1580114828293" MODIFIED="1580114858867">
@@ -964,7 +1342,7 @@
 <node TEXT="TODO" ID="ID_1418680726" CREATED="1580922101261" MODIFIED="1580922103534"/>
 <node TEXT="https://forums.fast.ai/t/deep-learning-in-medicine-resources-study-group/39940" ID="ID_1345220492" CREATED="1584464539786" MODIFIED="1584464543521" LINK="https://forums.fast.ai/t/deep-learning-in-medicine-resources-study-group/39940"/>
 </node>
-<node TEXT="Multimodal (deep) learning" FOLDED="true" ID="ID_2984727" CREATED="1580979329007" MODIFIED="1580979348062">
+<node TEXT="Multimodal (deep) learning" ID="ID_2984727" CREATED="1580979329007" MODIFIED="1580979348062">
 <node TEXT="Allgemein" ID="ID_1886604630" CREATED="1580979349743" MODIFIED="1580979520342">
 <node TEXT="Definition" ID="ID_55689709" CREATED="1580997512055" MODIFIED="1580997516516">
 <node TEXT="Learn from data of different sensors observing a common phenomena with the goal to use the data in a complementary manner towards learning a complex task" ID="ID_1598621003" CREATED="1580997389220" MODIFIED="1580997483628"/>
