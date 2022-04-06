@@ -128,7 +128,22 @@
 <node TEXT="commonly used hash functions:&#xa;MurmurHash3, Jenkins, CityHash, and MD5" ID="ID_1655008511" CREATED="1599635277676" MODIFIED="1599635310348"/>
 </node>
 <node TEXT="Target encoding" ID="ID_220676627" CREATED="1606214201267" MODIFIED="1606214206228">
-<node TEXT="each value in the column represented with the mean target value for that category" ID="ID_739771095" CREATED="1606214207925" MODIFIED="1606214239469"/>
+<node TEXT="each value in the column represented as some function of the target class values" ID="ID_739771095" CREATED="1606214207925" MODIFIED="1648018285952">
+<node TEXT="Functions" ID="ID_300482756" CREATED="1648019054969" MODIFIED="1648019138928">
+<node TEXT="Mean: P(Y=1 | X_i), pd.df.groupby(&apos;feature&apos;)[&apos;y&apos;].mean()" ID="ID_1117860697" CREATED="1648018290614" MODIFIED="1648018398393"/>
+<node TEXT="Weight of evidence: log( P(Y=1 | X_i) / P(Y=0 | X_i) )" ID="ID_1823599695" CREATED="1648018294855" MODIFIED="1648018408391"/>
+<node TEXT="Count: #(Y=1 | X_i)" ID="ID_250431200" CREATED="1648018408834" MODIFIED="1648018456799"/>
+<node TEXT="Difference: #(Y=1 | X_i) − #(Y=0 | X_i)" ID="ID_1846890822" CREATED="1648018457275" MODIFIED="1648018460120"/>
+</node>
+<node TEXT="Issues:" ID="ID_1567893457" CREATED="1648019065596" MODIFIED="1648019068261">
+<node TEXT="overfitting" ID="ID_1882497815" CREATED="1648019070894" MODIFIED="1648019084880"/>
+<node TEXT="data distribution changes between training and test sets" ID="ID_1462141168" CREATED="1648019085434" MODIFIED="1648019102737"/>
+<node TEXT="Solution:" ID="ID_1303960734" CREATED="1648019125064" MODIFIED="1648019128860">
+<node TEXT="K-fold CV" ID="ID_37504626" CREATED="1648019145084" MODIFIED="1648019150912"/>
+<node TEXT="additive smoothing" ID="ID_759671478" CREATED="1648019151080" MODIFIED="1648019157011"/>
+</node>
+</node>
+</node>
 </node>
 <node TEXT="Leave-one-out encoding" ID="ID_1342903696" CREATED="1606214315723" MODIFIED="1606214323058">
 <node TEXT="similar to Target encoding, except it excludes the current row value" ID="ID_503802994" CREATED="1606214324565" MODIFIED="1606214358063"/>
