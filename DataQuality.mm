@@ -3,7 +3,7 @@
 <node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1646578573556" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -148,10 +148,10 @@
 <hook URI="images/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Imbalanced data" FOLDED="true" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
+<node TEXT="Imbalanced data" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
 <node TEXT="Approaches" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
 <node TEXT="Sampling methods" ID="ID_1091281845" CREATED="1582564203599" MODIFIED="1582564208774">
-<node TEXT="Over-sampling minority class" FOLDED="true" ID="ID_104875823" CREATED="1573466540754" MODIFIED="1573466551584">
+<node TEXT="Over-sampling minority class" ID="ID_104875823" CREATED="1573466540754" MODIFIED="1573466551584">
 <node TEXT="" ID="ID_277873331" CREATED="1574674304900" MODIFIED="1574674304900">
 <node TEXT="Overview:" ID="ID_1405744596" CREATED="1574674339845" MODIFIED="1574674343849">
 <node TEXT="Kovacs_2019 An Empirical Comparison and Evaluation of Minority Oversampling Techniques" ID="ID_267083232" CREATED="1574674320735" MODIFIED="1574674320735"/>
@@ -184,7 +184,7 @@
 <node TEXT="uses a weighted distribution for different minority class samples according to their level of difficulty in learning, where more synthetic data is generated for minority examples that are harder to learn" ID="ID_64686086" CREATED="1573478947973" MODIFIED="1573479042967"/>
 </node>
 </node>
-<node TEXT="Under-sampling majority class" FOLDED="true" ID="ID_1377992952" CREATED="1573466521175" MODIFIED="1573466540325">
+<node TEXT="Under-sampling majority class" ID="ID_1377992952" CREATED="1573466521175" MODIFIED="1573466540325">
 <node TEXT="Overview" ID="ID_371359040" CREATED="1574674504082" MODIFIED="1574674506474">
 <node TEXT="Python library:&#xa;https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.under_sampling" ID="ID_1711876152" CREATED="1574674381276" MODIFIED="1574674559813" LINK="https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.under_sampling"/>
 </node>
@@ -224,9 +224,9 @@
 <node TEXT="classifier is trained on the data and the samples with lower probabilities (= harder to classify) are removed" ID="ID_381234143" CREATED="1573487646905" MODIFIED="1573487792997"/>
 </node>
 </node>
-<node TEXT="Combining over- and under-sampling" FOLDED="true" ID="ID_880909576" CREATED="1573466574901" MODIFIED="1573466590365">
+<node TEXT="Combining over- and under-sampling" ID="ID_880909576" CREATED="1573466574901" MODIFIED="1573466590365">
 <node TEXT="Overview" ID="ID_1168332845" CREATED="1574674610219" MODIFIED="1574674631370">
-<node TEXT="Python library:&#xa;https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.combine" ID="ID_872193223" CREATED="1574674581994" MODIFIED="1574674593161" LINK="https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.combine"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/combine.html" ID="ID_360541675" CREATED="1652685246362" MODIFIED="1652685246362" LINK="https://imbalanced-learn.org/stable/references/combine.html"/>
 </node>
 <node TEXT="SMOTE + Tomek links (see above)" ID="ID_1512896477" CREATED="1573466931595" MODIFIED="1574694639074"/>
 <node TEXT="SMOTE + Edited Nearest Neighbours (see above)" ID="ID_671486868" CREATED="1573466939205" MODIFIED="1574694646096"/>
@@ -234,31 +234,23 @@
 </node>
 <node TEXT="Create ensemble balanced sets" ID="ID_340541089" CREATED="1573466590575" MODIFIED="1573466610086">
 <node TEXT="Overview" ID="ID_1590450812" CREATED="1574674622002" MODIFIED="1574674628050">
-<node TEXT="Python library:&#xa;https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.ensemble" ID="ID_1067561904" CREATED="1574674648045" MODIFIED="1574674665464" LINK="https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.ensemble"/>
-</node>
-<node TEXT="BalanceCascade" ID="ID_1697478337" CREATED="1575624165599" MODIFIED="1575624173270">
-<node TEXT="Create an ensemble of balanced sets by iteratively under-sampling the imbalanced dataset using an estimator.&#xa;This method iteratively selects subset and makes an ensemble of the different sets. The selection is performed using a specific classifier." ID="ID_1392136290" CREATED="1575624217533" MODIFIED="1575624301410"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalanceCascade.html#r67d578f59cad-1" ID="ID_1444363131" CREATED="1575624311837" MODIFIED="1575624317052" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalanceCascade.html#r67d578f59cad-1"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/ensemble.html#" ID="ID_273016593" CREATED="1652685358298" MODIFIED="1652685358298" LINK="https://imbalanced-learn.org/stable/references/ensemble.html#"/>
 </node>
 <node TEXT="Balanced Bagging" ID="ID_1194209140" CREATED="1573466967375" MODIFIED="1573466972544">
 <node TEXT="bagging methods build several estimators on different randomly selected subset of data.&#xa;A Bagging classifier with additional balancing." ID="ID_679637039" CREATED="1575624228341" MODIFIED="1575624371472"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalancedBaggingClassifier.html#imblearn.ensemble.BalancedBaggingClassifier" ID="ID_413811908" CREATED="1575624374429" MODIFIED="1575624388522" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalancedBaggingClassifier.html#imblearn.ensemble.BalancedBaggingClassifier"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedBaggingClassifier.html" ID="ID_1463208498" CREATED="1652685449306" MODIFIED="1652685449306" LINK="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedBaggingClassifier.html"/>
 </node>
 <node TEXT="Balanced Random Forest" ID="ID_1467437657" CREATED="1573466959719" MODIFIED="1573466967085">
 <node TEXT="A balanced random forest randomly under-samples each boostrap sample to balance it." ID="ID_573498400" CREATED="1575624234166" MODIFIED="1575624419257"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalancedRandomForestClassifier.html#imblearn.ensemble.BalancedRandomForestClassifier" ID="ID_331646181" CREATED="1575624407532" MODIFIED="1575624412476" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.BalancedRandomForestClassifier.html#imblearn.ensemble.BalancedRandomForestClassifier"/>
-</node>
-<node TEXT="Easy Ensemble" ID="ID_363591382" CREATED="1575624197421" MODIFIED="1575624201651">
-<node TEXT="Create an ensemble sets by iteratively applying random under-sampling." ID="ID_756852532" CREATED="1575624241309" MODIFIED="1575624241913"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.EasyEnsemble.html#imblearn.ensemble.EasyEnsemble" ID="ID_1684914855" CREATED="1575624437756" MODIFIED="1575624442575" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.EasyEnsemble.html#imblearn.ensemble.EasyEnsemble"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html" ID="ID_456754029" CREATED="1652685456552" MODIFIED="1652685456552" LINK="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html"/>
 </node>
 <node TEXT="Easy Ensemble classifier" ID="ID_252902002" CREATED="1573466948685" MODIFIED="1573466959455">
 <node TEXT="Bag of balanced boosted learners also known as EasyEnsemble." ID="ID_280066711" CREATED="1575624247917" MODIFIED="1575624248498"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.EasyEnsembleClassifier.html#imblearn.ensemble.EasyEnsembleClassifier" ID="ID_994365144" CREATED="1575624455872" MODIFIED="1575624461134" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.EasyEnsembleClassifier.html#imblearn.ensemble.EasyEnsembleClassifier"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html" ID="ID_509583988" CREATED="1652685429903" MODIFIED="1652685429903" LINK="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html"/>
 </node>
 <node TEXT="RUSBoostClassifier" ID="ID_1842766457" CREATED="1575624205517" MODIFIED="1575624211363">
 <node TEXT="Random under-sampling integrating in the learning of an AdaBoost classifier." ID="ID_211391570" CREATED="1575624253981" MODIFIED="1575624254675"/>
-<node TEXT="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.RUSBoostClassifier.html#imblearn.ensemble.RUSBoostClassifier" ID="ID_1437021198" CREATED="1575624469981" MODIFIED="1575624474561" LINK="https://imbalanced-learn.readthedocs.io/en/stable/generated/imblearn.ensemble.RUSBoostClassifier.html#imblearn.ensemble.RUSBoostClassifier"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.RUSBoostClassifier.html" ID="ID_1299311368" CREATED="1652685437724" MODIFIED="1652685437724" LINK="https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.RUSBoostClassifier.html"/>
 </node>
 </node>
 <node TEXT="Cost-sensitive methods" ID="ID_373653190" CREATED="1582564234466" MODIFIED="1582564248148">
