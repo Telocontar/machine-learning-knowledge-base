@@ -155,8 +155,8 @@
 <node TEXT="" ID="ID_277873331" CREATED="1574674304900" MODIFIED="1574674304900">
 <node TEXT="Overview:" ID="ID_1405744596" CREATED="1574674339845" MODIFIED="1574674343849">
 <node TEXT="Kovacs_2019 An Empirical Comparison and Evaluation of Minority Oversampling Techniques" ID="ID_267083232" CREATED="1574674320735" MODIFIED="1574674320735"/>
-<node TEXT="Python library:&#xa;https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.over_sampling" ID="ID_1853542316" CREATED="1574674381276" MODIFIED="1574674463512" LINK="https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.over_sampling"/>
 <node TEXT="Python library #2:&#xa;https://github.com/gykovacs/smote_variants&#xa;https://smote-variants.readthedocs.io/en/latest/" ID="ID_267851580" CREATED="1574674755436" MODIFIED="1574674874082" LINK="https://github.com/gykovacs/smote_variants"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/over_sampling.html" ID="ID_1586941858" CREATED="1652685584682" MODIFIED="1652685584682" LINK="https://imbalanced-learn.org/stable/references/over_sampling.html"/>
 </node>
 </node>
 <node TEXT="Random minority over-sampling with replacement" ID="ID_538820744" CREATED="1573466841116" MODIFIED="1573466852835">
@@ -186,7 +186,7 @@
 </node>
 <node TEXT="Under-sampling majority class" ID="ID_1377992952" CREATED="1573466521175" MODIFIED="1573466540325">
 <node TEXT="Overview" ID="ID_371359040" CREATED="1574674504082" MODIFIED="1574674506474">
-<node TEXT="Python library:&#xa;https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.under_sampling" ID="ID_1711876152" CREATED="1574674381276" MODIFIED="1574674559813" LINK="https://imbalanced-learn.readthedocs.io/en/stable/api.html#module-imblearn.under_sampling"/>
+<node TEXT="https://imbalanced-learn.org/stable/references/under_sampling.html" ID="ID_1699923381" CREATED="1652685599665" MODIFIED="1652685599665" LINK="https://imbalanced-learn.org/stable/references/under_sampling.html"/>
 </node>
 <node TEXT="Random majority under-sampling with replacement" ID="ID_545171978" CREATED="1573466978665" MODIFIED="1573466990725">
 <node TEXT="randomly select a subset of data for the targeted classes" ID="ID_528700046" CREATED="1573479262978" MODIFIED="1573479280678"/>
