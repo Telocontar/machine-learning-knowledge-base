@@ -3,7 +3,7 @@
 <node TEXT="Model training" FOLDED="false" ID="ID_749452442" CREATED="1646569216273" MODIFIED="1646578602522" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -67,11 +67,11 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="3" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Crossvalidation" POSITION="right" ID="ID_1841838916" CREATED="1646569255531" MODIFIED="1646569259174"/>
 <node TEXT="Model engineering" POSITION="right" ID="ID_1136063772" CREATED="1646569384477" MODIFIED="1646569390022">
 <node TEXT="Feature selection" ID="ID_1720635487" CREATED="1646573555338" MODIFIED="1646573563523">
-<node TEXT="Methods" FOLDED="true" ID="ID_573244057" CREATED="1575023150125" MODIFIED="1575023152124">
+<node TEXT="Methods" ID="ID_573244057" CREATED="1575023150125" MODIFIED="1575023152124">
 <node TEXT="Manual selection" ID="ID_1014822725" CREATED="1575023153059" MODIFIED="1575023199187">
 <node TEXT="- using expert knowledge&#xa;- can&apos;t be automated&#xa;- expert required" ID="ID_1216650220" CREATED="1575023200007" MODIFIED="1575023234906"/>
 </node>
@@ -101,6 +101,34 @@
 </node>
 <node TEXT="Backward selection" ID="ID_559685779" CREATED="1575045110818" MODIFIED="1575045114696">
 <node TEXT="- train model on all features&#xa;- get importance of each feature&#xa;- remove n most unimportant features&#xa;- repeat until stop criterion is reached" ID="ID_388729694" CREATED="1575045287189" MODIFIED="1575045412342"/>
+</node>
+<node TEXT="Boruta" ID="ID_743928681" CREATED="1654152303675" MODIFIED="1654152306358">
+<node TEXT="- shuffle input features (each column separately)&#xa;- concatenate these features (called shadow features) with the original data&#xa;- train Random Forest which returns feature importance&#xa;- threshold: &apos;strongest&apos; shadow feature&#xa;- all real features with importance lower than threshold are dropped" ID="ID_631331174" CREATED="1654152313695" MODIFIED="1654152459027"/>
+<node TEXT="advantage" ID="ID_1510104734" CREATED="1654152860650" MODIFIED="1654152863708">
+<node TEXT="k (number of features) does not to be selected" ID="ID_925465188" CREATED="1654152864533" MODIFIED="1654152883751"/>
+<node TEXT="finds ALL features with predictive power" ID="ID_1845278819" CREATED="1654152902540" MODIFIED="1654152912896"/>
+</node>
+<node TEXT="disadvantage" ID="ID_1463574197" CREATED="1654152853431" MODIFIED="1654152858234">
+<node TEXT="&quot;all-relevant algorithm&quot; -&gt; selects ALL features that individually have any predictive power at all" ID="ID_895127524" CREATED="1654152679954" MODIFIED="1654152928837"/>
+</node>
+<node TEXT="Links" ID="ID_836665386" CREATED="1654152465276" MODIFIED="1654152467048">
+<node TEXT="https://danielhomola.com/feature%20selection/phd/borutapy-an-all-relevant-feature-selection-method" ID="ID_172554486" CREATED="1654152475439" MODIFIED="1654152475439" LINK="https://danielhomola.com/feature%20selection/phd/borutapy-an-all-relevant-feature-selection-method"/>
+<node TEXT="https://github.com/scikit-learn-contrib/boruta_py" ID="ID_1925406002" CREATED="1654152485974" MODIFIED="1654152485974" LINK="https://github.com/scikit-learn-contrib/boruta_py"/>
+</node>
+</node>
+<node TEXT="Maximum Relevance Minimum Redundancy (MRMR)" ID="ID_1048807110" CREATED="1654152818382" MODIFIED="1654152844429">
+<node TEXT="- select number of features k&#xa;- iteratively identify best feature (maximum relevance with respect to target AND minimum redundancy with respect to already selected features)&#xa;- repeat until number of features reached" ID="ID_122835814" CREATED="1654152965531" MODIFIED="1654153241547"/>
+<node TEXT="advantage" ID="ID_534692814" CREATED="1654152968517" MODIFIED="1654152974677">
+<node TEXT="finds a minimum number of features where the combination of features is optimal in terms of predictive power (redundant predictive features won&apos;t be selected due to the minimum redundancy criterion)" ID="ID_1720542496" CREATED="1654153152616" MODIFIED="1654153225290"/>
+</node>
+<node TEXT="disadvantage" ID="ID_329116521" CREATED="1654152975056" MODIFIED="1654152977936">
+<node TEXT="k needs to be chosen before running" ID="ID_794095804" CREATED="1654153227615" MODIFIED="1654153236545"/>
+</node>
+<node TEXT="links" ID="ID_1848738465" CREATED="1654152978783" MODIFIED="1654152980215">
+<node TEXT="https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b" ID="ID_1302374849" CREATED="1654152981275" MODIFIED="1654152981275" LINK="https://towardsdatascience.com/mrmr-explained-exactly-how-you-wished-someone-explained-to-you-9cf4ed27458b"/>
+<node TEXT="https://github.com/smazzanti/mrmr" ID="ID_363542948" CREATED="1654152987165" MODIFIED="1654152987165" LINK="https://github.com/smazzanti/mrmr"/>
+<node TEXT="https://eng.uber.com/research/maximum-relevance-and-minimum-redundancy-feature-selection-methods-for-a-marketing-machine-learning-platform/" ID="ID_1118199797" CREATED="1654153015410" MODIFIED="1654153015410" LINK="https://eng.uber.com/research/maximum-relevance-and-minimum-redundancy-feature-selection-methods-for-a-marketing-machine-learning-platform/"/>
+</node>
 </node>
 </node>
 <node TEXT="Embedded&#xa;(algorithms that have built-in feature selection methods)" ID="ID_609565616" CREATED="1575045764404" MODIFIED="1575045792623">
@@ -191,6 +219,31 @@
 <node TEXT="$\text{F1-Score} = \frac{2 \times (\text{Recall} \times \text{Precision})}{\text{Recall} + \text{Precision}}$" ID="ID_206141487" CREATED="1610957860127" MODIFIED="1610958139981" FORMAT="latexPatternFormat"/>
 </node>
 </node>
+</node>
+</node>
+<node TEXT="Distribution shift" POSITION="right" ID="ID_1581235214" CREATED="1653304925413" MODIFIED="1653304931943">
+<edge COLOR="#00dd00"/>
+<node TEXT="Types of shifts" ID="ID_603274250" CREATED="1653304933903" MODIFIED="1653304971048">
+<node TEXT="Covariate shift" ID="ID_1069334319" CREATED="1653305011687" MODIFIED="1653305015956">
+<node TEXT="synonyms: data drift, feature shift, population shift" ID="ID_1902912912" CREATED="1653305854586" MODIFIED="1653305878035"/>
+<node TEXT="data/feature distribution has changed, relationship between x and y stays the same" ID="ID_462282587" CREATED="1653305888555" MODIFIED="1653306290086"/>
+<node TEXT="model performs worse on unknown data regions" ID="ID_1507406291" CREATED="1653306567815" MODIFIED="1653306578013"/>
+</node>
+<node TEXT="Label shift" ID="ID_876000845" CREATED="1653305016144" MODIFIED="1653305021262">
+<node TEXT="" ID="ID_1450301703" CREATED="1653306580791" MODIFIED="1653306580791"/>
+</node>
+<node TEXT="Concept shift" ID="ID_1306059931" CREATED="1653305021876" MODIFIED="1653305025090">
+<node TEXT="subtypes" ID="ID_1734847484" CREATED="1653306634128" MODIFIED="1653306639926">
+<node TEXT="gradual" ID="ID_1757834848" CREATED="1653306640385" MODIFIED="1653306645020"/>
+<node TEXT="sudden" ID="ID_1531549839" CREATED="1653306645184" MODIFIED="1653306648854"/>
+<node TEXT="recurring (seasonal)" ID="ID_347232310" CREATED="1653306649562" MODIFIED="1653306659190"/>
+</node>
+</node>
+</node>
+<node TEXT="Solving shifts" ID="ID_828507308" CREATED="1653304981913" MODIFIED="1653305001671"/>
+<node TEXT="Links" ID="ID_286282414" CREATED="1653304961495" MODIFIED="1653304977918">
+<node TEXT="https://d2l.ai/chapter_multilayer-perceptrons/environment.html" ID="ID_1202457784" CREATED="1653304941369" MODIFIED="1653304959617" LINK="https://d2l.ai/chapter_multilayer-perceptrons/environment.html#correction-of-distribution-shift"/>
+<node TEXT="https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb" ID="ID_1521862490" CREATED="1653306672320" MODIFIED="1653306672320" LINK="https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb"/>
 </node>
 </node>
 </node>
