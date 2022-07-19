@@ -128,7 +128,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Outlier detection" FOLDED="true" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
+<node TEXT="Outlier detection" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
 <node TEXT="Links" ID="ID_612533058" CREATED="1604302916303" MODIFIED="1604302919377">
 <node TEXT="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba" ID="ID_1853476598" CREATED="1604302920764" MODIFIED="1604302926448" LINK="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba"/>
 <node TEXT="https://docs.seldon.io/projects/alibi-detect/en/latest/" ID="ID_740110476" CREATED="1604302935523" MODIFIED="1604302950088" LINK="https://docs.seldon.io/projects/alibi-detect/en/latest/"/>
@@ -143,6 +143,20 @@
 <node TEXT="Prophet Time Series Outlier Detector" ID="ID_714411772" CREATED="1604303005746" MODIFIED="1604303014772"/>
 <node TEXT="Spectral Residual" ID="ID_922055804" CREATED="1604303014959" MODIFIED="1604303020664"/>
 <node TEXT="Sequence-to-Sequence (Seq2Seq)" ID="ID_310212075" CREATED="1604303020836" MODIFIED="1604303033012"/>
+<node TEXT="DBSCAN" ID="ID_356805871" CREATED="1654583502277" MODIFIED="1654583504299"/>
+</node>
+<node TEXT="Definitions" ID="ID_947576449" CREATED="1658211880796" MODIFIED="1658211886551">
+<node TEXT="z-score" ID="ID_1534645535" CREATED="1658211887676" MODIFIED="1658211904055">
+<node TEXT="\latex z = \frac{x_i - \overline{x}}{s}" ID="ID_374192073" CREATED="1658211914293" MODIFIED="1658212998950">
+<node TEXT="\latex \text{s: standard deviation,} \overline{x}\text{: mean}" ID="ID_1871017333" CREATED="1658213002909" MODIFIED="1658213071381"/>
+</node>
+<node TEXT="outlier: z-score &gt; threshold (usually 3)" ID="ID_1966152231" CREATED="1658212560743" MODIFIED="1658212616712"/>
+</node>
+<node TEXT="Interquartile range (IQR)" ID="ID_1061562676" CREATED="1658212620065" MODIFIED="1658212636994">
+<node TEXT="\latex lower_bound = Q1 - 1.5 \times IQR" ID="ID_1461841500" CREATED="1658212629998" MODIFIED="1658213155733"/>
+<node TEXT="\latex upper bound = Q3 + 1.5 \times IQR" ID="ID_385905591" CREATED="1658213157070" MODIFIED="1658213164550"/>
+<node TEXT="outlier: below/above lower/upper bound" ID="ID_1945712031" CREATED="1658213171382" MODIFIED="1658213190645"/>
+</node>
 </node>
 <node TEXT="Suggested use for each algorithm included in the Alibi Detect library" ID="ID_923875318" CREATED="1604303087818" MODIFIED="1604303128241">
 <hook URI="images/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
@@ -261,6 +275,12 @@
 </node>
 <node TEXT="Active learning" ID="ID_209635071" CREATED="1582564418989" MODIFIED="1582564424427">
 <node TEXT="select instances from a random set of training data" ID="ID_1854049775" CREATED="1582564433330" MODIFIED="1582564532799"/>
+</node>
+<node TEXT="proper metric" ID="ID_1862678600" CREATED="1654267639120" MODIFIED="1654267643838">
+<node TEXT="Most of the time, just selecting the decision threshold of the model trained over imbalanced data based on the metric of interest is enough." ID="ID_1267670952" CREATED="1654267698376" MODIFIED="1654267716091"/>
+<node TEXT="metrics" ID="ID_1943393042" CREATED="1654267717169" MODIFIED="1654267718899">
+<node TEXT="precision-recall (PR AUC)" ID="ID_1395013439" CREATED="1654267719769" MODIFIED="1654267735276"/>
+</node>
 </node>
 </node>
 <node TEXT="Allgemein" ID="ID_1565819814" CREATED="1571934819033" MODIFIED="1571934821621">
