@@ -2,7 +2,7 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1646578573556" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
-<hook NAME="MapStyle" background="#3c3f41">
+<hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
     <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -67,7 +67,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="7" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Data quality metrics/indicators" FOLDED="true" POSITION="right" ID="ID_197276953" CREATED="1602227110233" MODIFIED="1646579523313">
 <edge COLOR="#7cdddd"/>
 <node TEXT="temp" ID="ID_1371546619" CREATED="1602227675230" MODIFIED="1602227696932">
@@ -128,7 +128,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Outlier detection" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
+<node TEXT="Outlier detection" FOLDED="true" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
 <node TEXT="Links" ID="ID_612533058" CREATED="1604302916303" MODIFIED="1604302919377">
 <node TEXT="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba" ID="ID_1853476598" CREATED="1604302920764" MODIFIED="1604302926448" LINK="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba"/>
 <node TEXT="https://docs.seldon.io/projects/alibi-detect/en/latest/" ID="ID_740110476" CREATED="1604302935523" MODIFIED="1604302950088" LINK="https://docs.seldon.io/projects/alibi-detect/en/latest/"/>
@@ -162,7 +162,7 @@
 <hook URI="images/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Imbalanced data" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
+<node TEXT="Imbalanced data" FOLDED="true" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
 <node TEXT="Approaches" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
 <node TEXT="Sampling methods" ID="ID_1091281845" CREATED="1582564203599" MODIFIED="1582564208774">
 <node TEXT="Over-sampling minority class" ID="ID_104875823" CREATED="1573466540754" MODIFIED="1573466551584">
@@ -342,6 +342,42 @@
 <node TEXT="SMOTE" ID="ID_1288665179" CREATED="1574430369741" MODIFIED="1574430372722"/>
 <node TEXT="GAN" ID="ID_339281688" CREATED="1574430373160" MODIFIED="1574430374551"/>
 <node TEXT="Semi-Supervised" ID="ID_1514424635" CREATED="1574430374858" MODIFIED="1574430379063"/>
+</node>
+</node>
+<node TEXT="Missing data" POSITION="right" ID="ID_103854991" CREATED="1664435441143" MODIFIED="1664435443499">
+<edge COLOR="#dddd7c"/>
+<node TEXT="Types of missing data" ID="ID_1868060849" CREATED="1582125866568" MODIFIED="1664435631470">
+<node TEXT="MCAR" ID="ID_989884154" CREATED="1582125873679" MODIFIED="1582125879871">
+<node TEXT="Missing Completely at Random" ID="ID_88353819" CREATED="1582125892824" MODIFIED="1582125893623"/>
+<node TEXT="no relationship between whether a data point is missing and any values in the data set, missing or observed" ID="ID_333575517" CREATED="1582126003487" MODIFIED="1582126004647"/>
+</node>
+<node TEXT="MAR" ID="ID_372302456" CREATED="1582125880263" MODIFIED="1582125881670">
+<node TEXT="Missing at Random" ID="ID_1572589202" CREATED="1582125901175" MODIFIED="1582125901646"/>
+<node TEXT="missing is related to some of the observed data" ID="ID_1233527889" CREATED="1582126208183" MODIFIED="1582126295545"/>
+</node>
+<node TEXT="NMAR" ID="ID_1620928317" CREATED="1582125882383" MODIFIED="1582125970081">
+<node TEXT="Missing not at random" ID="ID_1954973655" CREATED="1582125976632" MODIFIED="1582125977467"/>
+</node>
+</node>
+<node TEXT="Dealing with missing data" ID="ID_472005386" CREATED="1664435636975" MODIFIED="1664435640576">
+<node TEXT="Listwise deletion / Complete Case Analysis" ID="ID_465377571" CREATED="1582125037096" MODIFIED="1582125060355">
+<node TEXT="Approach" ID="ID_851293331" CREATED="1582125153556" MODIFIED="1582125155727">
+<node TEXT="Analyze only the complete data, drop incomplete data" ID="ID_105764765" CREATED="1582125066416" MODIFIED="1582125164072"/>
+</node>
+<node TEXT="Advantages" ID="ID_165388752" CREATED="1582125086009" MODIFIED="1582125089054">
+<node TEXT="Simple" ID="ID_76948570" CREATED="1582125093746" MODIFIED="1582125100566"/>
+<node TEXT="Unbiased under MCAR (missing completely at random)" ID="ID_1638982014" CREATED="1582126687166" MODIFIED="1582126701805"/>
+<node TEXT="Correct standard errors and significance levels" ID="ID_1587437478" CREATED="1582125101009" MODIFIED="1582125113055"/>
+</node>
+<node TEXT="Disadvantages" ID="ID_562965591" CREATED="1582125089234" MODIFIED="1582125092599">
+<node TEXT="Wasteful" ID="ID_1336519249" CREATED="1582125117921" MODIFIED="1582125122821"/>
+<node TEXT="Large standard errors" ID="ID_800530172" CREATED="1582125123624" MODIFIED="1582125128663"/>
+<node TEXT="biased under MAR (missing at random)" ID="ID_917645907" CREATED="1582126709910" MODIFIED="1582126752333"/>
+<node TEXT="Inconsistencies in reporting" ID="ID_1358893295" CREATED="1582125130968" MODIFIED="1582125139543"/>
+</node>
+</node>
+<node TEXT="Use model able to train on missing data" ID="ID_1822117001" CREATED="1664435667784" MODIFIED="1664435683760"/>
+<node TEXT="Data imputation" ID="ID_1108813910" CREATED="1664435669257" MODIFIED="1664435819338" LINK="freeplane:/%20/C:/Users/Benjamin/Desktop/DIFUTURE_pdfs/ML%20+%20coding%20knowledge/machine-learning-knowledge-base/Preprocessing.mm#ID_159135750"/>
 </node>
 </node>
 </node>

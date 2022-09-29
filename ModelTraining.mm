@@ -67,9 +67,9 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Crossvalidation" POSITION="right" ID="ID_1841838916" CREATED="1646569255531" MODIFIED="1646569259174"/>
-<node TEXT="Model engineering" POSITION="right" ID="ID_1136063772" CREATED="1646569384477" MODIFIED="1646569390022">
+<node TEXT="Model engineering" FOLDED="true" POSITION="right" ID="ID_1136063772" CREATED="1646569384477" MODIFIED="1646569390022">
 <node TEXT="Feature selection" ID="ID_1720635487" CREATED="1646573555338" MODIFIED="1646573563523">
 <node TEXT="Methods" ID="ID_573244057" CREATED="1575023150125" MODIFIED="1575023152124">
 <node TEXT="Manual selection" ID="ID_1014822725" CREATED="1575023153059" MODIFIED="1575023199187">
@@ -200,7 +200,7 @@
 </node>
 <node TEXT="Choosing the model" ID="ID_1828564522" CREATED="1646569404998" MODIFIED="1646569408928"/>
 </node>
-<node TEXT="Model evaluation" POSITION="right" ID="ID_598908670" CREATED="1646569414959" MODIFIED="1646569420465">
+<node TEXT="Model evaluation" FOLDED="true" POSITION="right" ID="ID_598908670" CREATED="1646569414959" MODIFIED="1646569420465">
 <node TEXT="Performance metrics" ID="ID_1292614202" CREATED="1646569421528" MODIFIED="1646569426762">
 <node TEXT="Accuracy" ID="ID_1063187839" CREATED="1610957638906" MODIFIED="1610957643236"/>
 <node TEXT="AUC of ROC" FOLDED="true" ID="ID_1409022853" CREATED="1610957643806" MODIFIED="1610957649889">
@@ -244,6 +244,23 @@
 <node TEXT="Links" ID="ID_286282414" CREATED="1653304961495" MODIFIED="1653304977918">
 <node TEXT="https://d2l.ai/chapter_multilayer-perceptrons/environment.html" ID="ID_1202457784" CREATED="1653304941369" MODIFIED="1653304959617" LINK="https://d2l.ai/chapter_multilayer-perceptrons/environment.html#correction-of-distribution-shift"/>
 <node TEXT="https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb" ID="ID_1521862490" CREATED="1653306672320" MODIFIED="1653306672320" LINK="https://towardsdatascience.com/machine-learning-in-production-why-you-should-care-about-data-and-concept-drift-d96d0bc907fb"/>
+</node>
+</node>
+<node TEXT="Ensembles" POSITION="right" ID="ID_7846850" CREATED="1657176407097" MODIFIED="1657176409136">
+<edge COLOR="#dd0000"/>
+<node TEXT="Links" ID="ID_401558826" CREATED="1657176411403" MODIFIED="1657176412898">
+<node ID="ID_864965393" CREATED="1657176417256" MODIFIED="1657176417256" LINK="https://towardsdatascience.com/hyperparameters-tuning-for-machine-learning-model-ensembles-8051782b538b"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <a href="https://towardsdatascience.com/hyperparameters-tuning-for-machine-learning-model-ensembles-8051782b538b">Hyperparameters Tuning for Machine Learning Model Ensembles | by Mikhail Sarafanov | Jun, 2022 | Towards Data Science</a>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>

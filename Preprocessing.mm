@@ -2,7 +2,7 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Preprocessing" FOLDED="false" ID="ID_492143138" CREATED="1646569150108" MODIFIED="1646578594858" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
-<hook NAME="MapStyle" background="#3c3f41">
+<hook NAME="MapStyle" background="#3c3f41" zoom="0.827">
     <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
@@ -68,7 +68,7 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Normalization" FOLDED="true" POSITION="right" ID="ID_278180044" CREATED="1646569159413" MODIFIED="1646569166831">
+<node TEXT="Normalization" POSITION="right" ID="ID_278180044" CREATED="1646569159413" MODIFIED="1646569166831">
 <node TEXT="Types of normalizations" ID="ID_946803047" CREATED="1646579131490" MODIFIED="1646579139524">
 <node TEXT="Min-Max normalization: (x - a)/(b-a); x=data point, a=min value, b=max value" ID="ID_1978929372" CREATED="1574698068046" MODIFIED="1574698265532"/>
 <node TEXT="Max normalization: x/b; x=data point, b=max value" ID="ID_568612177" CREATED="1574698103119" MODIFIED="1574698271010"/>
@@ -85,9 +85,9 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" POSITION="right" ID="ID_1793626089" CREATED="1646569168030" MODIFIED="1646569173599">
-<node TEXT="Feature extraction" FOLDED="true" ID="ID_567538541" CREATED="1646573504461" MODIFIED="1646573517457">
-<node ID="ID_859910197" CREATED="1579092990444" MODIFIED="1579092990444"><richcontent TYPE="NODE">
+<node TEXT="Feature preprocessing" POSITION="right" ID="ID_1793626089" CREATED="1646569168030" MODIFIED="1664435408056">
+<node TEXT="Feature extraction" FOLDED="true" ID="ID_567538541" CREATED="1646573504461" MODIFIED="1660656645979">
+<node ID="ID_859910197" CREATED="1579092990444" MODIFIED="1660656645978"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -114,7 +114,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
+<node TEXT="Feature encoding" FOLDED="true" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
 <node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
@@ -197,10 +197,12 @@
 <node TEXT="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809" ID="ID_1365245265" CREATED="1606204965199" MODIFIED="1606204971196" LINK="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809"/>
 <node TEXT="TODO: read" ID="ID_799663258" CREATED="1648016578815" MODIFIED="1648016584840">
 <node TEXT="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6" ID="ID_449210345" CREATED="1648016566428" MODIFIED="1648016574780" LINK="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6"/>
+<node TEXT="https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html" ID="ID_1565219949" CREATED="1659947200594" MODIFIED="1659947200594" LINK="https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html"/>
+<node TEXT="https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02" ID="ID_1102430802" CREATED="1659947207284" MODIFIED="1659947207284" LINK="https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02"/>
 </node>
 </node>
 </node>
-<node TEXT="Feature engineering" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
+<node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
 <node TEXT="Process of using domain knowledge of the data to create features (manually or automatic)" ID="ID_1306715748" CREATED="1578931070053" MODIFIED="1578931187700">
 <node TEXT="TODO" ID="ID_389082671" CREATED="1578930996910" MODIFIED="1578930998602"/>
 <node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004"/>
@@ -227,42 +229,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Data imputation" FOLDED="true" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
-<node TEXT="Allgemein" ID="ID_1657823958" CREATED="1571934690454" MODIFIED="1571934693095">
-<node TEXT="Abbrevations" ID="ID_1868060849" CREATED="1582125866568" MODIFIED="1582125873247">
-<node TEXT="MCAR" ID="ID_989884154" CREATED="1582125873679" MODIFIED="1582125879871">
-<node TEXT="Missing Completely at Random" ID="ID_88353819" CREATED="1582125892824" MODIFIED="1582125893623"/>
-<node TEXT="no relationship between whether a data point is missing and any values in the data set, missing or observed" ID="ID_333575517" CREATED="1582126003487" MODIFIED="1582126004647"/>
-</node>
-<node TEXT="MAR" ID="ID_372302456" CREATED="1582125880263" MODIFIED="1582125881670">
-<node TEXT="Missing at Random" ID="ID_1572589202" CREATED="1582125901175" MODIFIED="1582125901646"/>
-<node TEXT="missing is related to some of the observed data" ID="ID_1233527889" CREATED="1582126208183" MODIFIED="1582126295545"/>
-</node>
-<node TEXT="NMAR" ID="ID_1620928317" CREATED="1582125882383" MODIFIED="1582125970081">
-<node TEXT="Missing not at random" ID="ID_1954973655" CREATED="1582125976632" MODIFIED="1582125977467"/>
-</node>
-</node>
-</node>
+<node TEXT="Data imputation" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
 <node TEXT="Links" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
 <node TEXT="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf" ID="ID_753824408" CREATED="1582125310384" MODIFIED="1582125320854" LINK="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf"/>
 </node>
-<node TEXT="Approaches" FOLDED="true" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
-<node TEXT="Listwise deletion / Complete Case Analysis" ID="ID_465377571" CREATED="1582125037096" MODIFIED="1582125060355">
-<node TEXT="Approach" ID="ID_851293331" CREATED="1582125153556" MODIFIED="1582125155727">
-<node TEXT="Analyze only the complete data, drop incomplete data" ID="ID_105764765" CREATED="1582125066416" MODIFIED="1582125164072"/>
-</node>
-<node TEXT="Advantages" ID="ID_165388752" CREATED="1582125086009" MODIFIED="1582125089054">
-<node TEXT="Simple" ID="ID_76948570" CREATED="1582125093746" MODIFIED="1582125100566"/>
-<node TEXT="Unbiased under MCAR (missing completely at random)" ID="ID_1638982014" CREATED="1582126687166" MODIFIED="1582126701805"/>
-<node TEXT="Correct standard errors and significance levels" ID="ID_1587437478" CREATED="1582125101009" MODIFIED="1582125113055"/>
-</node>
-<node TEXT="Disadvantages" ID="ID_562965591" CREATED="1582125089234" MODIFIED="1582125092599">
-<node TEXT="Wasteful" ID="ID_1336519249" CREATED="1582125117921" MODIFIED="1582125122821"/>
-<node TEXT="Large standard errors" ID="ID_800530172" CREATED="1582125123624" MODIFIED="1582125128663"/>
-<node TEXT="biased under MAR (missing at random)" ID="ID_917645907" CREATED="1582126709910" MODIFIED="1582126752333"/>
-<node TEXT="Inconsistencies in reporting" ID="ID_1358893295" CREATED="1582125130968" MODIFIED="1582125139543"/>
-</node>
-</node>
+<node TEXT="Approaches" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
 <node TEXT="Mean/Mode" ID="ID_125707353" CREATED="1571934695780" MODIFIED="1571934722262">
 <node TEXT="Approach" ID="ID_1240159266" CREATED="1582125167753" MODIFIED="1582125170080">
 <node TEXT="Replace the missing values by the mean/mode (=most frequent value) of the observed data" ID="ID_1736376129" CREATED="1582125191352" MODIFIED="1582125211720"/>

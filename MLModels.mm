@@ -2,8 +2,8 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="ML Models" FOLDED="false" ID="ID_1971734532" CREATED="1646569145692" MODIFIED="1646579644173" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#dd0000" WIDTH="1" DASH="SOLID"/>
-<hook NAME="MapStyle" background="#3c3f41">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+<hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -67,7 +67,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="ANNs" POSITION="left" ID="ID_162798553" CREATED="1646574030675" MODIFIED="1646574033182">
 <node TEXT="Architecture Search" FOLDED="true" ID="ID_1061387949" CREATED="1571393043155" MODIFIED="1571393284611" HGAP_QUANTITY="18.5 pt" VSHIFT_QUANTITY="-0.75 pt">
 <node TEXT="Paper" ID="ID_502212220" CREATED="1571393295748" MODIFIED="1571393299931">
@@ -200,6 +200,91 @@
 <node TEXT="SVM" POSITION="left" ID="ID_897765926" CREATED="1646574979311" MODIFIED="1646574981577">
 <node TEXT="Kernel functions" ID="ID_823599719" CREATED="1602514863777" MODIFIED="1602514866941">
 <node TEXT="http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/" ID="ID_262513477" CREATED="1602514868174" MODIFIED="1602514874112" LINK="http://crsouza.com/2010/03/17/kernel-functions-for-machine-learning-applications/"/>
+</node>
+</node>
+<node TEXT="Ensemble methods" POSITION="left" ID="ID_1936018779" CREATED="1660027731414" MODIFIED="1660027745230">
+<edge COLOR="#dd0000"/>
+<node TEXT="Random Forest" ID="ID_1657000969" CREATED="1660027747493" MODIFIED="1660027751185">
+<node TEXT="steps" ID="ID_164333193" CREATED="1660027776572" MODIFIED="1660056107164">
+<node TEXT="create bootstrapped data" ID="ID_865835093" CREATED="1660027789235" MODIFIED="1660027797808">
+<node ID="ID_1694345022" CREATED="1660027844850" MODIFIED="1660027889996"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      bootstrap: randomly sample from the original train data <b>with repetition</b>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node TEXT="build a decision tree" ID="ID_739442804" CREATED="1660027801991" MODIFIED="1660027806856">
+<node TEXT="use bootstrap data" ID="ID_1093124545" CREATED="1660055047024" MODIFIED="1660055051894"/>
+<node TEXT="consider random subset of features at each node (usually square root of n)" ID="ID_1606175736" CREATED="1660055052349" MODIFIED="1660055083036"/>
+</node>
+<node TEXT="repeat" ID="ID_940063940" CREATED="1660027807225" MODIFIED="1660027811353"/>
+<node TEXT="predict, aggregate and evaluate" ID="ID_377735448" CREATED="1660027813002" MODIFIED="1660027820994">
+<node TEXT="run out-of-bag samples through decision trees that were built without them" ID="ID_218339914" CREATED="1660055106870" MODIFIED="1660055142699"/>
+<node TEXT="aggregate predictions" ID="ID_960170438" CREATED="1660055142965" MODIFIED="1660055153417"/>
+<node TEXT="compare aggregated predictions with true labels" ID="ID_722455425" CREATED="1660055153714" MODIFIED="1660055171769"/>
+</node>
+</node>
+</node>
+<node TEXT="AdaBoost" ID="ID_841326910" CREATED="1660027751500" MODIFIED="1660027762545">
+<node TEXT="steps" ID="ID_755407862" CREATED="1660055188357" MODIFIED="1660056111595">
+<node TEXT="initialize sample weight and build decision stump" ID="ID_810229993" CREATED="1660055193013" MODIFIED="1660055261848">
+<node TEXT="decision stump: one root, two leaves" ID="ID_412828861" CREATED="1660055212033" MODIFIED="1660055269425"/>
+<node TEXT="sample weight: same weight for all samples: (1/m)" ID="ID_1104526939" CREATED="1660055296303" MODIFIED="1660055311435"/>
+</node>
+<node TEXT="calculate amount of say for decision stump" ID="ID_1500286061" CREATED="1660055283004" MODIFIED="1660055293853">
+<node TEXT="\latex \text{amount of say} = \frac{1}{2}ln(\frac{1-\text{total_error}}{\text{total_error}})" ID="ID_1976376841" CREATED="1660055435039" MODIFIED="1660055579159">
+<node TEXT="\latex total\_error = $\sum_i^I{\text{weight}_i}$,&#xa;with I: incorrect samples" ID="ID_530338017" CREATED="1660055591821" MODIFIED="1660055942787"/>
+</node>
+</node>
+<node TEXT="update sample weight" ID="ID_664654324" CREATED="1660055949700" MODIFIED="1660055953672">
+<node TEXT="increase weight of incorrectly labeled samples" ID="ID_304433929" CREATED="1660055958740" MODIFIED="1660055970750"/>
+<node TEXT="decrease weight of correctly labeled samples" ID="ID_108401006" CREATED="1660055970982" MODIFIED="1660055979867"/>
+</node>
+<node TEXT="repeat" ID="ID_1348807584" CREATED="1660055996113" MODIFIED="1660055997299"/>
+</node>
+</node>
+<node TEXT="Gradient Boosting" ID="ID_1388064856" CREATED="1660027762829" MODIFIED="1660027766566">
+<node TEXT="overview" ID="ID_618668850" CREATED="1660056018481" MODIFIED="1660056020635">
+<node TEXT="similar to AdaBoost" ID="ID_964435703" CREATED="1660056021969" MODIFIED="1660056026429"/>
+<node TEXT="uses larger trees" ID="ID_1372941992" CREATED="1660056026894" MODIFIED="1660056033422"/>
+<node TEXT="doesn&apos;t use sample weight, uses residual made by decision tree to guide the next tree" ID="ID_386757840" CREATED="1660056042321" MODIFIED="1660056072071"/>
+</node>
+<node TEXT="steps" ID="ID_34236169" CREATED="1660056114178" MODIFIED="1660056117100">
+<node TEXT="initialize root" ID="ID_1626741701" CREATED="1660056086623" MODIFIED="1660056092107">
+<node TEXT="encode target class with 0 and 1, calculate the prediction probability p (e.g. 7x class 0, 3x class 1 -&gt; p=0.3)" ID="ID_887896726" CREATED="1660056179455" MODIFIED="1660058642650"/>
+<node TEXT="calculate log odds" ID="ID_1607980256" CREATED="1660056264252" MODIFIED="1660056269704">
+<node TEXT="\latex log(odds) = ln \left(\frac{p}{1-p}\right)" ID="ID_1459749235" CREATED="1660056271233" MODIFIED="1660056325084"/>
+</node>
+</node>
+<node TEXT="calculate residual" ID="ID_1137503917" CREATED="1660056123079" MODIFIED="1660056129621">
+<node TEXT="residual r = y - p" ID="ID_1928913679" CREATED="1660058662859" MODIFIED="1660058675063"/>
+</node>
+<node TEXT="update log odds" ID="ID_1863797320" CREATED="1660058714768" MODIFIED="1660058718869"/>
+<node TEXT="repeat" ID="ID_1580751847" CREATED="1660058735798" MODIFIED="1660058736747"/>
+</node>
+</node>
+<node TEXT="Links" ID="ID_1856974691" CREATED="1660027925778" MODIFIED="1660027927471">
+<node ID="ID_687442991" CREATED="1660027933065" MODIFIED="1660027933065" LINK="https://towardsdatascience.com/understanding-ensemble-methods-random-forest-adaboost-and-gradient-boosting-in-10-minutes-ca5a1e305af2"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <a href="https://towardsdatascience.com/understanding-ensemble-methods-random-forest-adaboost-and-gradient-boosting-in-10-minutes-ca5a1e305af2">Understanding Ensemble Methods: Random Forest, AdaBoost, and Gradient Boosting in 10 Minutes | by Albers Uzila | Aug, 2022 | Towards Data Science</a>
+  </body>
+</html>
+</richcontent>
+</node>
 </node>
 </node>
 </node>

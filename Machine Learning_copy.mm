@@ -1,8 +1,8 @@
 <map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Machine Learning" FOLDED="false" ID="ID_1989395992" CREATED="1572345760783" MODIFIED="1646577182652" STYLE="oval">
+<node TEXT="Machine Learning" FOLDED="false" ID="ID_1989395992" CREATED="1572345760783" MODIFIED="1649338008622" STYLE="oval">
 <font SIZE="18"/>
-<hook NAME="MapStyle" background="#3c3f41" zoom="0.96">
+<hook NAME="MapStyle" background="#3c3f41" zoom="0.794">
     <properties show_icon_for_attributes="true" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" show_note_icons="true" fit_to_viewport="false"/>
 
 <map_styles>
@@ -66,7 +66,7 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="8" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="left" ID="ID_1198878355" CREATED="1573743781880" MODIFIED="1646577182651" HGAP_QUANTITY="357.74999 pt" VSHIFT_QUANTITY="-1658.24994 pt">
+<node TEXT="" LOCALIZED_STYLE_REF="defaultstyle.floating" POSITION="left" ID="ID_1198878355" CREATED="1573743781880" MODIFIED="1649338008622" HGAP_QUANTITY="284.99999 pt" VSHIFT_QUANTITY="-2141.24993 pt">
 <hook NAME="FreeNode"/>
 <richcontent TYPE="NOTE" CONTENT-TYPE="xml/">
 <html>
@@ -174,7 +174,7 @@
 <node TEXT="Class distribution" ID="ID_1106377799" CREATED="1584634924196" MODIFIED="1584634931065"/>
 </node>
 </node>
-<node TEXT="Libraries / Packages" ID="ID_1475227352" CREATED="1605513656874" MODIFIED="1628501377774">
+<node TEXT="Libraries / Packages" FOLDED="true" ID="ID_1475227352" CREATED="1605513656874" MODIFIED="1628501377774">
 <node TEXT="Explainable AI" ID="ID_1268267716" CREATED="1605513280317" MODIFIED="1605513283557">
 <node TEXT="XAI" ID="ID_1802075173" CREATED="1629096756697" MODIFIED="1629096763712">
 <node TEXT="Links" ID="ID_424924415" CREATED="1629096777290" MODIFIED="1629096779171">
@@ -359,7 +359,12 @@
 </node>
 <node TEXT="Dimensionality reduction" ID="ID_1439511036" CREATED="1628495315879" MODIFIED="1628495325999">
 <node TEXT="PCA" ID="ID_1752119829" CREATED="1628495383569" MODIFIED="1628495384799"/>
-<node TEXT="tSNE" ID="ID_1487721142" CREATED="1628495385749" MODIFIED="1628495389459"/>
+<node TEXT="t-SNE" ID="ID_1487721142" CREATED="1628495385749" MODIFIED="1655213225566">
+<node TEXT="How to use t-SNE effectively" ID="ID_1382626915" CREATED="1655213243566" MODIFIED="1655213250651">
+<node TEXT="https://distill.pub/2016/misread-tsne/" ID="ID_342990094" CREATED="1655213233701" MODIFIED="1655213233701" LINK="https://distill.pub/2016/misread-tsne/"/>
+<node TEXT="https://www.youtube.com/watch?v=StqH9kjDsv4" ID="ID_449355816" CREATED="1655213262245" MODIFIED="1655213262245" LINK="https://www.youtube.com/watch?v=StqH9kjDsv4"/>
+</node>
+</node>
 <node TEXT="UMAP (Uniform Manifold Approximation and Projection for Dimension Reduction)" ID="ID_1536819620" CREATED="1628495390508" MODIFIED="1628495496889">
 <node TEXT="https://github.com/lmcinnes/umap" ID="ID_1458516923" CREATED="1628495403199" MODIFIED="1628495407139" LINK="https://github.com/lmcinnes/umap"/>
 <node TEXT="https://arxiv.org/pdf/1802.03426.pdf" ID="ID_240841047" CREATED="1628495416019" MODIFIED="1628495422189" LINK="https://arxiv.org/pdf/1802.03426.pdf"/>
@@ -471,7 +476,7 @@
 </node>
 <node TEXT="Tips &amp; tricks" ID="ID_942565908" CREATED="1649228085472" MODIFIED="1649228089307">
 <node TEXT="Shortcuts" ID="ID_1954944139" CREATED="1649228134564" MODIFIED="1649228137464">
-<node TEXT="Ctrl + Shift + P: command palette" ID="ID_1793569538" CREATED="1649228099482" MODIFIED="1649228194094"/>
+<node TEXT="Escape + P: command palette" ID="ID_1793569538" CREATED="1649228099482" MODIFIED="1649329288583"/>
 <node TEXT="Shift + M: Merge multiple cells" ID="ID_1836412706" CREATED="1649228115378" MODIFIED="1649228202465"/>
 <node TEXT="Ctrl + Shift + - :  split the current cell into two from where your cursor is" ID="ID_437763025" CREATED="1649228172404" MODIFIED="1649228246200"/>
 </node>
@@ -486,7 +491,6 @@
     <pre class=" language-python"><code class=" language-python"><span class="token keyword">from</span> IPython<span class="token punctuation">.</span>core<span class="token punctuation">.</span>interactiveshell <span class="token keyword">import</span> InteractiveShell</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1346814541" CREATED="1649228337596" MODIFIED="1649228337596"><richcontent TYPE="NODE">
@@ -499,7 +503,6 @@
     <pre class=" language-python"><code class=" language-python">InteractiveShell<span class="token punctuation">.</span>ast_node_interactivity <span class="token operator">=</span> <span class="token string">&quot;all&quot;</span></code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -518,7 +521,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1493528409" CREATED="1649229291050" MODIFIED="1649229291050"><richcontent TYPE="NODE">
@@ -535,7 +537,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1836466760" CREATED="1649229291063" MODIFIED="1649229291063" LINK="https://seaborn.pydata.org/"><richcontent TYPE="NODE">
@@ -552,7 +553,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1099528212" CREATED="1649229291068" MODIFIED="1649229291068" LINK="https://github.com/mpld3/mpld3"><richcontent TYPE="NODE">
@@ -569,7 +569,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_192400244" CREATED="1649229291071" MODIFIED="1649229291071" LINK="https://bokeh.pydata.org/en/latest/"><richcontent TYPE="NODE">
@@ -586,7 +585,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_417540106" CREATED="1649229291074" MODIFIED="1649229291074" LINK="https://plot.ly/"><richcontent TYPE="NODE">
@@ -603,7 +601,6 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1411324635" CREATED="1649229291078" MODIFIED="1649229291078" LINK="https://github.com/altair-viz/altair"><richcontent TYPE="NODE">
@@ -620,11 +617,10 @@
     </ul>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
-<node TEXT="IPython Magic Commands" ID="ID_1739430700" CREATED="1649229387286" MODIFIED="1649229395821">
+<node TEXT="IPython Magic Commands" FOLDED="true" ID="ID_1739430700" CREATED="1649229387286" MODIFIED="1649229395821">
 <node TEXT="%lsmagic&#xa;list all magic commands" ID="ID_224485725" CREATED="1649229398676" MODIFIED="1649229423584"/>
 <node TEXT="%run&#xa;execute python code from .py/.ipynb files" ID="ID_629521836" CREATED="1649229449596" MODIFIED="1649229634362">
 <node ID="ID_1218234670" CREATED="1649229626943" MODIFIED="1649229626943"><richcontent TYPE="NODE">
@@ -637,7 +633,6 @@
     <pre><code><span spellcheck="true"># this will execute and show the output from</span><br class="rm"/><span spellcheck="true"># all code cells of the specified notebook</span><br class="rm"/>%run ./two-histograms.ipynb</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -652,7 +647,6 @@
     <pre><code><span spellcheck="true"># Before Running</span><br class="rm"/>%load ./hello_world.py</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1302007761" CREATED="1649229615768" MODIFIED="1649229615768"><richcontent TYPE="NODE">
@@ -665,7 +659,6 @@
     <pre><code><span spellcheck="true"># After Running</span><br class="rm"/><span spellcheck="true"># %load ./hello_world.py</span><br class="rm"/>if __name__ == &quot;__main__&quot;:<br class="rm"/> print(&quot;Hello World!&quot;)</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_903847055" CREATED="1649229615772" MODIFIED="1649229615772"><richcontent TYPE="NODE">
@@ -678,7 +671,6 @@
     <pre><code>Hello World!</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -693,7 +685,6 @@
     <pre><code>one = &quot;for the money&quot;<br class="rm"/>two = &quot;for the show&quot;<br class="rm"/>three = &quot;to get ready now go cat go&quot;<br class="rm"/>%who str</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1763390247" CREATED="1649229689846" MODIFIED="1649229689846"><richcontent TYPE="NODE">
@@ -706,7 +697,6 @@
     <pre><code>one three two</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -721,7 +711,6 @@
     <pre><code>%%writefile pythoncode.py <br class="rm"/>import numpy<br class="rm"/>def append_if_not_exists(arr, x):<br class="rm"/> if x not in arr:<br class="rm"/> arr.append(x)def some_useless_slow_function():<br class="rm"/> arr = list()<br class="rm"/>    for i in range(10000):<br class="rm"/>        x = numpy.random.randint(0, 10000)<br class="rm"/>    append_if_not_exists(arr, x)</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1517683407" CREATED="1649229729336" MODIFIED="1649229729336"><richcontent TYPE="NODE">
@@ -734,7 +723,6 @@
     <pre><code>Writing pythoncode.py</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1050775537" CREATED="1649229729340" MODIFIED="1649229729340"><richcontent TYPE="NODE">
@@ -747,7 +735,6 @@
     <pre><code>%pycat pythoncode.py</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1890925615" CREATED="1649229729342" MODIFIED="1649229729342"><richcontent TYPE="NODE">
@@ -760,7 +747,6 @@
     <pre><code>import numpy<br class="rm"/>def append_if_not_exists(arr, x):<br class="rm"/> if x not in arr:<br class="rm"/> arr.append(x)def some_useless_slow_function():<br class="rm"/> arr = list()<br class="rm"/> for i in range(10000):<br class="rm"/> x = numpy.random.randint(0, 10000)<br class="rm"/> append_if_not_exists(arr, x)</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -775,7 +761,6 @@
     <pre><code>%prun some_useless_slow_function()</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1447314873" CREATED="1649229799288" MODIFIED="1649229799288"><richcontent TYPE="NODE">
@@ -788,7 +773,6 @@
     <pre><code>26324 function calls in 0.556 seconds <br class="rm"/>Ordered by: internal time <br class="rm"/>ncalls tottime percall cumtime percall filename:lineno(function)<br class="rm"/>10000 0.527 0.000 0.528 0.000 :2(append_if_not_exists)<br class="rm"/>10000 0.022 0.000 0.022 0.000 {method 'randint' of 'mtrand.RandomState' objects}<br class="rm"/>1 0.006 0.006 0.556 0.556 :6(some_useless_slow_function)<br class="rm"/>6320 0.001 0.000 0.001 0.000 {method 'append' of 'list' objects}<br class="rm"/>1 0.000 0.000 0.556 0.556 :1()<br class="rm"/>1 0.000 0.000 0.556 0.556 {built-in method exec}<br class="rm"/>1 0.000 0.000 0.000 0.000 {method 'disable' of '_lsprof.Profiler' objects}</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -805,7 +789,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -824,7 +807,6 @@
     <pre><code>!ls *.csv</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 <node ID="ID_1650561596" CREATED="1649229928335" MODIFIED="1649229928335"><richcontent TYPE="NODE">
@@ -837,11 +819,14 @@
     <pre><code>nba_2016.csv titanic.csv pixar_movies.csv whitehouse_employees.csv</code></pre>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
 </node>
+</node>
+<node TEXT="with conda environments:" ID="ID_1220857537" CREATED="1652194236289" MODIFIED="1652194246117">
+<node TEXT="source activate myenv&#xa;python -m ipykernel install --user --name myenv --display-name &quot;Python (myenv)&quot;" ID="ID_1311906300" CREATED="1652194247674" MODIFIED="1652194249131"/>
+<node TEXT="https://stackoverflow.com/a/44786736" ID="ID_1592226173" CREATED="1652194394897" MODIFIED="1652194409852" LINK="https://stackoverflow.com/a/44786736"/>
 </node>
 <node TEXT="Links" ID="ID_902653463" CREATED="1649226603213" MODIFIED="1649226608206">
 <node TEXT="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/" ID="ID_618541781" CREATED="1649226610537" MODIFIED="1649226623890" LINK="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/"/>
@@ -861,6 +846,11 @@
 <node TEXT="Google Courses" ID="ID_884266199" CREATED="1595597919113" MODIFIED="1595597942703">
 <node TEXT="https://developers.google.com/machine-learning" ID="ID_1057493880" CREATED="1595597943760" MODIFIED="1595597972668" LINK="https://developers.google.com/machine-learning/crash-course"/>
 </node>
+</node>
+</node>
+<node TEXT="Tutorials" ID="ID_1578519057" CREATED="1649424391116" MODIFIED="1649424394019">
+<node TEXT="Time series data" ID="ID_97383841" CREATED="1649424395358" MODIFIED="1649424398429">
+<node TEXT="https://www.kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts" ID="ID_1474795919" CREATED="1649424401974" MODIFIED="1649424401974" LINK="https://www.kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts"/>
 </node>
 </node>
 </node>
@@ -1225,7 +1215,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Learning" ID="ID_99068843" CREATED="1572257584046" MODIFIED="1582541336453">
+<node TEXT="Learning" FOLDED="true" ID="ID_99068843" CREATED="1572257584046" MODIFIED="1582541336453">
 <node TEXT="Supervised" ID="ID_1631014060" CREATED="1572257593683" MODIFIED="1572257596927">
 <node TEXT="TODO: kurzbeschreibung" ID="ID_373003903" CREATED="1576597716068" MODIFIED="1576597723143"/>
 </node>
@@ -1338,11 +1328,11 @@
 <node TEXT="Hidden Markov Models (HMM)" ID="ID_1611495576" CREATED="1580978965605" MODIFIED="1580978977734"/>
 </node>
 </node>
-<node TEXT="Healthcare / Medicine / Medical applications" ID="ID_581388216" CREATED="1580922091241" MODIFIED="1584464532059">
+<node TEXT="Healthcare / Medicine / Medical applications" FOLDED="true" ID="ID_581388216" CREATED="1580922091241" MODIFIED="1584464532059">
 <node TEXT="TODO" ID="ID_1418680726" CREATED="1580922101261" MODIFIED="1580922103534"/>
 <node TEXT="https://forums.fast.ai/t/deep-learning-in-medicine-resources-study-group/39940" ID="ID_1345220492" CREATED="1584464539786" MODIFIED="1584464543521" LINK="https://forums.fast.ai/t/deep-learning-in-medicine-resources-study-group/39940"/>
 </node>
-<node TEXT="Multimodal (deep) learning" ID="ID_2984727" CREATED="1580979329007" MODIFIED="1580979348062">
+<node TEXT="Multimodal (deep) learning" FOLDED="true" ID="ID_2984727" CREATED="1580979329007" MODIFIED="1580979348062">
 <node TEXT="Allgemein" ID="ID_1886604630" CREATED="1580979349743" MODIFIED="1580979520342">
 <node TEXT="Definition" ID="ID_55689709" CREATED="1580997512055" MODIFIED="1580997516516">
 <node TEXT="Learn from data of different sensors observing a common phenomena with the goal to use the data in a complementary manner towards learning a complex task" ID="ID_1598621003" CREATED="1580997389220" MODIFIED="1580997483628"/>
