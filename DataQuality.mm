@@ -3,7 +3,7 @@
 <node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1646578573556" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
-    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
+    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -376,7 +376,11 @@
 <node TEXT="Inconsistencies in reporting" ID="ID_1358893295" CREATED="1582125130968" MODIFIED="1582125139543"/>
 </node>
 </node>
-<node TEXT="Use model able to train on missing data" ID="ID_1822117001" CREATED="1664435667784" MODIFIED="1664435683760"/>
+<node TEXT="Use model able to train on missing data" ID="ID_1822117001" CREATED="1664435667784" MODIFIED="1664435683760">
+<node TEXT="Tree-based models" ID="ID_1326450239" CREATED="1664735627223" MODIFIED="1664735632199">
+<node TEXT="Encode missing data to negative number (e.g. 999) -&gt; model does not treat NaNs special anymore" ID="ID_321560088" CREATED="1664735633615" MODIFIED="1664735676844"/>
+</node>
+</node>
 <node TEXT="Data imputation" ID="ID_1108813910" CREATED="1664435669257" MODIFIED="1664435819338" LINK="freeplane:/%20/C:/Users/Benjamin/Desktop/DIFUTURE_pdfs/ML%20+%20coding%20knowledge/machine-learning-knowledge-base/Preprocessing.mm#ID_159135750"/>
 </node>
 </node>

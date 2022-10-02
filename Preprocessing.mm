@@ -2,8 +2,8 @@
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
 <node TEXT="Preprocessing" FOLDED="false" ID="ID_492143138" CREATED="1646569150108" MODIFIED="1646578594858" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
-<hook NAME="MapStyle" background="#3c3f41" zoom="0.827">
-    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
+<hook NAME="MapStyle" background="#3c3f41" zoom="0.932">
+    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -114,7 +114,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" FOLDED="true" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
+<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
 <node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
@@ -182,6 +182,11 @@
 </node>
 <node TEXT="TODO" ID="ID_1989571253" CREATED="1579785685817" MODIFIED="1579785687582"/>
 </node>
+<node TEXT="Strings/Texts" ID="ID_1826565974" CREATED="1664738758624" MODIFIED="1664738770883">
+<node TEXT="Vector representation" ID="ID_1629545067" CREATED="1664738776297" MODIFIED="1664738785412">
+<node TEXT="transform into low dimensional subspace (e.g. Word2Vec)" ID="ID_270439856" CREATED="1664738785755" MODIFIED="1664738810782"/>
+</node>
+</node>
 <node TEXT="Categorical (TODO: in nominal/ordinal splitten)" ID="ID_327429059" CREATED="1575024237973" MODIFIED="1575024262128">
 <node TEXT="Deviation coding" ID="ID_198166846" CREATED="1575024275441" MODIFIED="1575024279247"/>
 <node TEXT="Orthogonal polynomial coding" ID="ID_1268731775" CREATED="1575024279424" MODIFIED="1575024288997"/>
@@ -202,10 +207,43 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
+<node TEXT="Feature engineering" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
 <node TEXT="Process of using domain knowledge of the data to create features (manually or automatic)" ID="ID_1306715748" CREATED="1578931070053" MODIFIED="1578931187700">
-<node TEXT="TODO" ID="ID_389082671" CREATED="1578930996910" MODIFIED="1578930998602"/>
-<node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004"/>
+<node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004">
+<node TEXT="Combining features" ID="ID_679043910" CREATED="1664735801259" MODIFIED="1664735817190">
+<node TEXT="numeric data" ID="ID_1414333677" CREATED="1664735820171" MODIFIED="1664735837703">
+<node TEXT="combine them via addtition, subtraction, multiplication, division etc." ID="ID_298213103" CREATED="1664735837713" MODIFIED="1664735874403"/>
+</node>
+<node TEXT="categorical data (strings)" ID="ID_1009103394" CREATED="1664735876192" MODIFIED="1664735892419">
+<node TEXT="concatenate" ID="ID_949386319" CREATED="1664735893202" MODIFIED="1664735897852"/>
+</node>
+</node>
+<node TEXT="Splitting" ID="ID_1960064601" CREATED="1664735818499" MODIFIED="1664735907534">
+<node TEXT="numeric data:" ID="ID_1827343077" CREATED="1664735955369" MODIFIED="1664735958592">
+<node TEXT="e.g. column &quot;price&quot; 40.99$ -&gt; dollar: 40, cents: 99" ID="ID_135988567" CREATED="1664735928412" MODIFIED="1664736030061"/>
+</node>
+<node TEXT="categorical data" ID="ID_754915757" CREATED="1664735928412" MODIFIED="1664736010230">
+<node TEXT="e.g. column &quot;browser&quot; Firefox 105.0.1  -&gt; : &quot;software&quot;: Firefox, &quot;version&quot;: 105.0.1" ID="ID_103099744" CREATED="1664736011802" MODIFIED="1664737953489"/>
+</node>
+</node>
+<node TEXT="Frequency encoding" ID="ID_435238006" CREATED="1664737991641" MODIFIED="1664737996011">
+<node TEXT="encode which values are rare" ID="ID_77534231" CREATED="1664738002025" MODIFIED="1664738024885"/>
+<node TEXT="value_counts_dict = df[col].value_counts().to_dict()&#xa;df[f&apos;{col}_counts&apos;] = df[col].map(value_counts_dict)" ID="ID_616709372" CREATED="1664738026618" MODIFIED="1664738343900"/>
+</node>
+<node TEXT="Aggregate" ID="ID_1224134114" CREATED="1664738361555" MODIFIED="1664738400896">
+<node TEXT="calculate statistics per group" ID="ID_499511265" CREATED="1664738412951" MODIFIED="1664738429418">
+<node TEXT="df.groupby(col)[col2].agg([&apos;mean&apos;])" ID="ID_1414885510" CREATED="1664738444705" MODIFIED="1664738467669"/>
+</node>
+</node>
+<node TEXT="Normalize/Standardize" ID="ID_124329025" CREATED="1664738262172" MODIFIED="1664738410019">
+<node TEXT="normalize column itself" ID="ID_1250593267" CREATED="1664738582946" MODIFIED="1664738592662">
+<node TEXT="df[col] = ( df[col]-df[col].mean() ) / df[col].std()" ID="ID_99227328" CREATED="1664738270445" MODIFIED="1664738320471"/>
+</node>
+<node TEXT="normalize against aggregated column" ID="ID_1209073420" CREATED="1664738294559" MODIFIED="1664738604135">
+<node TEXT="df[col] = df[col] / df[&quot;mean_per_week&quot;]" ID="ID_1342876249" CREATED="1664738604972" MODIFIED="1664738636737"/>
+</node>
+</node>
+</node>
 <node TEXT="Automatic" ID="ID_917445658" CREATED="1579090030545" MODIFIED="1579090033477">
 <node TEXT="Methods" ID="ID_1344407717" CREATED="1579090093788" MODIFIED="1579090097451">
 <node TEXT="Deep Feature Synthesis" ID="ID_884682876" CREATED="1578933725161" MODIFIED="1578933730909">
@@ -229,7 +267,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Data imputation" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
+<node TEXT="Data imputation" FOLDED="true" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
 <node TEXT="Links" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
 <node TEXT="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf" ID="ID_753824408" CREATED="1582125310384" MODIFIED="1582125320854" LINK="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf"/>
 </node>
