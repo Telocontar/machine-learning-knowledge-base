@@ -230,7 +230,7 @@
 <node TEXT="encode which values are rare" ID="ID_77534231" CREATED="1664738002025" MODIFIED="1664738024885"/>
 <node TEXT="value_counts_dict = df[col].value_counts().to_dict()&#xa;df[f&apos;{col}_counts&apos;] = df[col].map(value_counts_dict)" ID="ID_616709372" CREATED="1664738026618" MODIFIED="1664738343900"/>
 </node>
-<node TEXT="Aggregate" ID="ID_1224134114" CREATED="1664738361555" MODIFIED="1664738400896">
+<node TEXT="Aggregate (mean encoding)" ID="ID_1224134114" CREATED="1664738361555" MODIFIED="1664795052301">
 <node TEXT="calculate statistics per group" ID="ID_499511265" CREATED="1664738412951" MODIFIED="1664738429418">
 <node TEXT="df.groupby(col)[col2].agg([&apos;mean&apos;])" ID="ID_1414885510" CREATED="1664738444705" MODIFIED="1664738467669"/>
 </node>
