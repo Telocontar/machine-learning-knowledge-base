@@ -3,7 +3,7 @@
 <node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1646578573556" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -128,10 +128,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Outlier detection" FOLDED="true" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
+<node TEXT="Outlier detection" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
 <node TEXT="Links" ID="ID_612533058" CREATED="1604302916303" MODIFIED="1604302919377">
 <node TEXT="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba" ID="ID_1853476598" CREATED="1604302920764" MODIFIED="1604302926448" LINK="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba"/>
 <node TEXT="https://docs.seldon.io/projects/alibi-detect/en/latest/" ID="ID_740110476" CREATED="1604302935523" MODIFIED="1604302950088" LINK="https://docs.seldon.io/projects/alibi-detect/en/latest/"/>
+<node TEXT="https://scikit-learn.org/stable/modules/outlier_detection.html" ID="ID_1670314398" CREATED="1665054470993" MODIFIED="1665054470993" LINK="https://scikit-learn.org/stable/modules/outlier_detection.html"/>
 </node>
 <node TEXT="Algorithms" ID="ID_1140237360" CREATED="1604302929054" MODIFIED="1604302933221">
 <node TEXT="Isolation Forest" ID="ID_371866989" CREATED="1604302963559" MODIFIED="1604302967887"/>
@@ -293,7 +294,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Few data" FOLDED="true" POSITION="right" ID="ID_1128431762" CREATED="1646573680698" MODIFIED="1646573683645">
+<node TEXT="Few data" POSITION="right" ID="ID_1128431762" CREATED="1646573680698" MODIFIED="1646573683645">
 <node TEXT="Data augmentation" ID="ID_554772155" CREATED="1646574429552" MODIFIED="1646574432659">
 <node TEXT="Paper" ID="ID_1313740734" CREATED="1571675879347" MODIFIED="1571675885622">
 <node TEXT="Cubuk_2018 AutoAugment - Learning Augmentation Policies from Data" ID="ID_73849693" CREATED="1571675407431" MODIFIED="1571675409220"/>

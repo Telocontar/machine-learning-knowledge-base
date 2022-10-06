@@ -1,6 +1,6 @@
 <map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="ML Models" FOLDED="false" ID="ID_1971734532" CREATED="1646569145692" MODIFIED="1646579644173" LINK="PlannedStructure.mm">
+<node TEXT="ML models" FOLDED="false" ID="ID_1971734532" CREATED="1646569145692" MODIFIED="1665059788322" LINK="PlannedStructure.mm">
 <edge STYLE="bezier" COLOR="#dd0000" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
     <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>

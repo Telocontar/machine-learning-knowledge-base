@@ -67,6 +67,9 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="3" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="Visualizations" POSITION="right" ID="ID_1696875722" CREATED="1664435365410" MODIFIED="1664435369127">
+<edge COLOR="#00dd00"/>
+</node>
 </node>
 </map>
