@@ -1,6 +1,6 @@
 <map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Preprocessing" FOLDED="false" ID="ID_492143138" CREATED="1646569150108" MODIFIED="1646578594858" LINK="PlannedStructure.mm">
+<node TEXT="Preprocessing" FOLDED="false" ID="ID_492143138" CREATED="1646569150108" MODIFIED="1665301251042" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.932">
     <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
@@ -69,7 +69,7 @@
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Normalization" POSITION="right" ID="ID_278180044" CREATED="1646569159413" MODIFIED="1646569166831">
-<node TEXT="Types of normalizations" ID="ID_946803047" CREATED="1646579131490" MODIFIED="1646579139524">
+<node TEXT="Types of normalizations" FOLDED="true" ID="ID_946803047" CREATED="1646579131490" MODIFIED="1646579139524">
 <node TEXT="Min-Max normalization: (x - a)/(b-a); x=data point, a=min value, b=max value" ID="ID_1978929372" CREATED="1574698068046" MODIFIED="1574698265532"/>
 <node TEXT="Max normalization: x/b; x=data point, b=max value" ID="ID_568612177" CREATED="1574698103119" MODIFIED="1574698271010"/>
 <node TEXT="L1 normalization: x/c; x=data point, c=sum of all values" ID="ID_699759303" CREATED="1574698166782" MODIFIED="1574698200497"/>
@@ -79,7 +79,7 @@
 <node TEXT="divide the original time-series into M equally sized frames and compute the mean values for each frame" ID="ID_1974697225" CREATED="1582541540452" MODIFIED="1582541550301"/>
 </node>
 </node>
-<node TEXT="Which algorithm needs feature normalization" ID="ID_130771322" CREATED="1637921094144" MODIFIED="1637921107934">
+<node TEXT="Which algorithm needs feature normalization" FOLDED="true" ID="ID_130771322" CREATED="1637921094144" MODIFIED="1637921107934">
 <node TEXT="feature_normalization_algorithms.png" ID="ID_1020526224" CREATED="1637921157293" MODIFIED="1637921157314">
 <hook URI="images/Data%20structure%20_representation/feature_normalization_algorithms.png" SIZE="0.88495576" NAME="ExternalObject"/>
 </node>
@@ -114,7 +114,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
+<node TEXT="Feature encoding" FOLDED="true" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
 <node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
@@ -207,7 +207,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature engineering" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
+<node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
 <node TEXT="Process of using domain knowledge of the data to create features (manually or automatic)" ID="ID_1306715748" CREATED="1578931070053" MODIFIED="1578931187700">
 <node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004">
 <node TEXT="Combining features" ID="ID_679043910" CREATED="1664735801259" MODIFIED="1664735817190">
@@ -267,11 +267,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Data imputation" FOLDED="true" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
-<node TEXT="Links" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
+<node TEXT="Data imputation" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
+<node TEXT="Links" FOLDED="true" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
 <node TEXT="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf" ID="ID_753824408" CREATED="1582125310384" MODIFIED="1582125320854" LINK="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf"/>
 </node>
-<node TEXT="Approaches" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
+<node TEXT="Approaches" FOLDED="true" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
 <node TEXT="Mean/Mode" ID="ID_125707353" CREATED="1571934695780" MODIFIED="1571934722262">
 <node TEXT="Approach" ID="ID_1240159266" CREATED="1582125167753" MODIFIED="1582125170080">
 <node TEXT="Replace the missing values by the mean/mode (=most frequent value) of the observed data" ID="ID_1736376129" CREATED="1582125191352" MODIFIED="1582125211720"/>

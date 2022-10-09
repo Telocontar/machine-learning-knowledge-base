@@ -1,9 +1,9 @@
 <map version="freeplane 1.9.13">
 <!--To view this file, download free mind mapping software Freeplane from https://www.freeplane.org -->
-<node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1646578573556" LINK="PlannedStructure.mm">
+<node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1665301223834" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
-    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
+    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -128,7 +128,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Outlier detection" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
+<node TEXT="Outlier detection" FOLDED="true" POSITION="right" ID="ID_637904279" CREATED="1646569189671" MODIFIED="1646569194513">
 <node TEXT="Links" ID="ID_612533058" CREATED="1604302916303" MODIFIED="1604302919377">
 <node TEXT="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba" ID="ID_1853476598" CREATED="1604302920764" MODIFIED="1604302926448" LINK="https://towardsdatascience.com/simplifing-image-outlier-detection-with-alibi-detect-6aea686bf7ba"/>
 <node TEXT="https://docs.seldon.io/projects/alibi-detect/en/latest/" ID="ID_740110476" CREATED="1604302935523" MODIFIED="1604302950088" LINK="https://docs.seldon.io/projects/alibi-detect/en/latest/"/>
@@ -163,8 +163,8 @@
 <hook URI="images/Data%20quality/Outlier%20detection/Outlier_detection_algorithms.png" SIZE="0.85714287" NAME="ExternalObject"/>
 </node>
 </node>
-<node TEXT="Imbalanced data" FOLDED="true" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
-<node TEXT="Approaches" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
+<node TEXT="Imbalanced data" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
+<node TEXT="Approaches" FOLDED="true" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
 <node TEXT="Sampling methods" ID="ID_1091281845" CREATED="1582564203599" MODIFIED="1582564208774">
 <node TEXT="Over-sampling minority class" ID="ID_104875823" CREATED="1573466540754" MODIFIED="1573466551584">
 <node TEXT="" ID="ID_277873331" CREATED="1574674304900" MODIFIED="1574674304900">
@@ -284,7 +284,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Allgemein" ID="ID_1565819814" CREATED="1571934819033" MODIFIED="1571934821621">
+<node TEXT="Overall" FOLDED="true" ID="ID_1565819814" CREATED="1571934819033" MODIFIED="1665301128854">
 <node TEXT="Paper" ID="ID_1884924849" CREATED="1571675920147" MODIFIED="1571675921767">
 <node TEXT="Feng_2018 Class Imbalance Ensemble Learning Based on the Margin Theory" ID="ID_1565876548" CREATED="1582561682012" MODIFIED="1582561682543"/>
 </node>
@@ -296,7 +296,7 @@
 </node>
 <node TEXT="Few data" POSITION="right" ID="ID_1128431762" CREATED="1646573680698" MODIFIED="1646573683645">
 <node TEXT="Data augmentation" ID="ID_554772155" CREATED="1646574429552" MODIFIED="1646574432659">
-<node TEXT="Paper" ID="ID_1313740734" CREATED="1571675879347" MODIFIED="1571675885622">
+<node TEXT="Paper" FOLDED="true" ID="ID_1313740734" CREATED="1571675879347" MODIFIED="1571675885622">
 <node TEXT="Cubuk_2018 AutoAugment - Learning Augmentation Policies from Data" ID="ID_73849693" CREATED="1571675407431" MODIFIED="1571675409220"/>
 <node TEXT="DeVries_2017 Dataset augmentation in feature space" ID="ID_1467224501" CREATED="1571675421102" MODIFIED="1571675421850"/>
 <node TEXT="Fawaz_2018 Data augmentation using synthetic data for time series classification with deep residual networks" ID="ID_1363328338" CREATED="1571675430348" MODIFIED="1571675430892"/>
@@ -311,7 +311,7 @@
 <node TEXT="Tran_2017 A Bayesian Data Augmentation Approach for Learning Deep Models" ID="ID_524430730" CREATED="1571675519797" MODIFIED="1571675520269"/>
 <node TEXT="Wei_2019 EDA - Easy Data Augmentation Techniques for Boosting Performance on Text Classification Tasks" ID="ID_826087555" CREATED="1574431528943" MODIFIED="1574431531764"/>
 </node>
-<node TEXT="Allgemein" ID="ID_138408062" CREATED="1571934839279" MODIFIED="1571934841983">
+<node TEXT="Overall" FOLDED="true" ID="ID_138408062" CREATED="1571934839279" MODIFIED="1665301118406">
 <node TEXT="Images" ID="ID_1885506763" CREATED="1574430408400" MODIFIED="1574430411898">
 <node TEXT="Flip" ID="ID_262218905" CREATED="1574430382302" MODIFIED="1574431210802"/>
 <node TEXT="Rotation" ID="ID_1973244710" CREATED="1574431205951" MODIFIED="1574431208231"/>
@@ -335,7 +335,7 @@
 <node TEXT="Random deletion" ID="ID_232123434" CREATED="1574431324066" MODIFIED="1574431328129"/>
 </node>
 </node>
-<node TEXT="Links" ID="ID_1873252539" CREATED="1571675897045" MODIFIED="1571675899030">
+<node TEXT="Links" FOLDED="true" ID="ID_1873252539" CREATED="1571675897045" MODIFIED="1571675899030">
 <node TEXT="https://heartbeat.fritz.ai/research-guide-data-augmentation-for-deep-learning-7f141fcc191c?gi=fb3d0f4c5af6" ID="ID_1922001861" CREATED="1574698486774" MODIFIED="1574698493682" LINK="https://heartbeat.fritz.ai/research-guide-data-augmentation-for-deep-learning-7f141fcc191c?gi=fb3d0f4c5af6"/>
 </node>
 </node>
