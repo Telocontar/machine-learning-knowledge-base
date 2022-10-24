@@ -116,22 +116,74 @@
 </node>
 <node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
-<node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
+<node TEXT="Categorical" ID="ID_1852428493" CREATED="1666640132822" MODIFIED="1666640136880">
+<node TEXT="Unsupervised" ID="ID_1597486993" CREATED="1666643890747" MODIFIED="1666643894198">
+<node TEXT="Label encoding" ID="ID_1850918461" CREATED="1573462042424" MODIFIED="1573462048027">
+<node TEXT="converts each string value to integer. The first unique value in your column becomes 1, the second becomes 2, the third becomes 3, and so on." ID="ID_1034604848" CREATED="1573462407070" MODIFIED="1666640458634">
+<node TEXT="only acceptable for tree-based models" ID="ID_400095574" CREATED="1666639832599" MODIFIED="1666639840474"/>
+<node TEXT="pandas: numbers assigned by order of data" ID="ID_143518246" CREATED="1666640358574" MODIFIED="1666640374945"/>
+<node TEXT="sklearn: numbers assigned alphabetically" ID="ID_873726365" CREATED="1666640375630" MODIFIED="1666640390090"/>
+</node>
+</node>
+<node TEXT="Ordinal encoding" ID="ID_109692547" CREATED="1666640412090" MODIFIED="1666640415860">
+<node TEXT="converts each string value to integer. Order needs to be provided e.g. via dictionary" ID="ID_754999000" CREATED="1573462407070" MODIFIED="1666640508847">
+<node TEXT="only applicable to ordinal data" ID="ID_761147077" CREATED="1666640510841" MODIFIED="1666640518692"/>
+</node>
+</node>
+<node TEXT="Frequency encoding" ID="ID_1923580971" CREATED="1666640159656" MODIFIED="1666640169410">
+<node TEXT="replace each category with their frequency in the data" ID="ID_1607692266" CREATED="1615450330453" MODIFIED="1615450341434">
+<node TEXT="mostly used in NLP to encode token or n-gram counts" ID="ID_85663688" CREATED="1666640207987" MODIFIED="1666640228799"/>
+<node TEXT="In the cases where the frequency is related somewhat with the target variable, it helps the model to understand and assign the weight in direct and inverse proportion, depending on the nature of the data." ID="ID_1928060584" CREATED="1666640292458" MODIFIED="1666640298220"/>
+</node>
+<node TEXT="also called: count encoder" ID="ID_265686676" CREATED="1666643222945" MODIFIED="1666643228637"/>
+</node>
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
 <node TEXT="creates one column for each value to compare against all other values. For each new column, a row gets a 1 if the row contained that column’s value and a 0 if it did not." ID="ID_754657842" CREATED="1573462528029" MODIFIED="1573462529561"/>
 </node>
-<node TEXT="Dummy coding" ID="ID_1888556112" CREATED="1575024263079" MODIFIED="1575024267420">
+<node TEXT="Dummy encoding" ID="ID_1888556112" CREATED="1575024263079" MODIFIED="1666643849299">
 <node TEXT="similar to one-hot encoding, except it chooses the reference category and uses the zero-vector to encode this category" ID="ID_1360261719" CREATED="1575024966698" MODIFIED="1575025131756"/>
 </node>
-<node TEXT="Feature hashing" ID="ID_501463711" CREATED="1599635054831" MODIFIED="1599635061542">
+<node TEXT="Binary encoding" ID="ID_1493983019" CREATED="1666643549938" MODIFIED="1666643552293">
+<node TEXT="- categories are converted to numeric order starting from 1&#xa;- those integers are converted into binary code, so for example, 3 becomes 011, 4 becomes 100&#xa;- digits of the binary number form separate columns" ID="ID_1352294104" CREATED="1666643636434" MODIFIED="1666643684297">
+<node TEXT="https://miro.medium.com/max/720/1*VuNZWUX6b7GUGB0zRu2zrA.png" ID="ID_117262685" CREATED="1666643719912" MODIFIED="1666643719912" LINK="https://miro.medium.com/max/720/1*VuNZWUX6b7GUGB0zRu2zrA.png"/>
+</node>
+</node>
+<node TEXT="Hash encoding" ID="ID_501463711" CREATED="1599635054831" MODIFIED="1666640776498">
 <node TEXT="- decide on dimensionality m of this feature vector&#xa;- use hash function to convert categorical attributes to numbers&#xa;- convert number into index of feature vector (mod m)" ID="ID_1990160491" CREATED="1599635113035" MODIFIED="1599635276050"/>
 <node TEXT="commonly used hash functions:&#xa;MurmurHash3, Jenkins, CityHash, and MD5" ID="ID_1655008511" CREATED="1599635277676" MODIFIED="1599635310348"/>
 </node>
+<node TEXT="Embedding" ID="ID_174643895" CREATED="1615450388732" MODIFIED="1615450391940">
+<node TEXT="convert them into numerical embeddings e.g. by using Word2Vec" ID="ID_722471093" CREATED="1615450393022" MODIFIED="1615450430742"/>
+</node>
+</node>
+<node TEXT="Supervised" ID="ID_481498730" CREATED="1666643884338" MODIFIED="1666643888774">
 <node TEXT="Target encoding" ID="ID_220676627" CREATED="1606214201267" MODIFIED="1606214206228">
 <node TEXT="each value in the column represented as some function of the target class values" ID="ID_739771095" CREATED="1606214207925" MODIFIED="1648018285952">
-<node TEXT="Functions" ID="ID_300482756" CREATED="1648019054969" MODIFIED="1648019138928">
-<node TEXT="Mean: P(Y=1 | X_i), pd.df.groupby(&apos;feature&apos;)[&apos;y&apos;].mean()" ID="ID_1117860697" CREATED="1648018290614" MODIFIED="1648018398393"/>
-<node TEXT="Weight of evidence: log( P(Y=1 | X_i) / P(Y=0 | X_i) )" ID="ID_1823599695" CREATED="1648018294855" MODIFIED="1648018408391"/>
+<node TEXT="variants" ID="ID_300482756" CREATED="1648019054969" MODIFIED="1666644114825">
+<node TEXT="Mean: P(Y=1 | X_i), pd.df.groupby(&apos;feature&apos;)[&apos;y&apos;].mean()" ID="ID_1117860697" CREATED="1648018290614" MODIFIED="1648018398393">
+<node TEXT="https://miro.medium.com/max/720/1*iiM9g-qCa-Vff_HAFk-ppQ.png" ID="ID_840222971" CREATED="1666644151732" MODIFIED="1666644151732" LINK="https://miro.medium.com/max/720/1*iiM9g-qCa-Vff_HAFk-ppQ.png"/>
+</node>
+<node TEXT="Weight of evidence: log( P(Y=1 | X_i) / P(Y=0 | X_i) )" ID="ID_1823599695" CREATED="1648018294855" MODIFIED="1648018408391">
+<node TEXT="well suited for logistic regression" ID="ID_1831421425" CREATED="1666644196619" MODIFIED="1666644204342"/>
+<node TEXT="WoE = 0, if outcome is random for this group&#xa;Woe &gt; 0, if class 1 is more likely for this group&#xa;WoE &lt; 0, if class 0 is more likely for this group" ID="ID_737575740" CREATED="1666644254726" MODIFIED="1666644333680"/>
+<node TEXT="advantages:" ID="ID_103804101" CREATED="1666644361893" MODIFIED="1666644366778">
+<node TEXT="can transform an independent variable to establish a monotonic relationship to the dependent variable" ID="ID_1255677118" CREATED="1666644367445" MODIFIED="1666644380986"/>
+<node TEXT="variables with too many (sparsely populated) discrete values can be grouped into categories (densely populated); WoE can be used to express information for category" ID="ID_428080073" CREATED="1666644381623" MODIFIED="1666644437023"/>
+<node TEXT="effect of each category on the dependent variable can be compared across categories and variables" ID="ID_1414488143" CREATED="1666644437379" MODIFIED="1666644451242"/>
+</node>
+<node TEXT="disadvantages:" ID="ID_93887373" CREATED="1666644454348" MODIFIED="1666644465248">
+<node TEXT="Loss of information (variation) due to binning to a few categories" ID="ID_206681775" CREATED="1666644466269" MODIFIED="1666644475387"/>
+<node TEXT="“univariate” measure (correlation between independent variables are ignored)" ID="ID_1723350357" CREATED="1666644475814" MODIFIED="1666644495875"/>
+<node TEXT="prone to overfitting" ID="ID_806809330" CREATED="1666644498032" MODIFIED="1666644506652"/>
+</node>
+<node TEXT="https://miro.medium.com/max/720/1*F8ldfSn39-Ax223jI2G45A.png" ID="ID_1254058084" CREATED="1666644584500" MODIFIED="1666644584500" LINK="https://miro.medium.com/max/720/1*F8ldfSn39-Ax223jI2G45A.png"/>
+<node TEXT="https://miro.medium.com/max/720/1*sCjf9joaZE_b_mr8fTwfHQ.png" ID="ID_364024475" CREATED="1666644597644" MODIFIED="1666644597644" LINK="https://miro.medium.com/max/720/1*sCjf9joaZE_b_mr8fTwfHQ.png"/>
+</node>
+<node TEXT="Probability ratio encoding: P(Y=1|X_i) / P(Y=0|X_i)" ID="ID_1455630658" CREATED="1666644655356" MODIFIED="1666644753400">
+<node TEXT="similar to weight of evidence, except only the ratio of class 0 and 1 is used" ID="ID_1794903952" CREATED="1666644671148" MODIFIED="1666644710355"/>
+<node TEXT="https://miro.medium.com/max/720/1*o5_P9N-uDXsaRIjtp_4TFQ.png" ID="ID_1219901288" CREATED="1666644766053" MODIFIED="1666644766053" LINK="https://miro.medium.com/max/720/1*o5_P9N-uDXsaRIjtp_4TFQ.png"/>
+<node TEXT="https://miro.medium.com/max/720/1*BnPVnqHotAuNcbMM1UnrIw.png" ID="ID_1691740937" CREATED="1666644771463" MODIFIED="1666644771463" LINK="https://miro.medium.com/max/720/1*BnPVnqHotAuNcbMM1UnrIw.png"/>
+</node>
 <node TEXT="Count: #(Y=1 | X_i)" ID="ID_250431200" CREATED="1648018408834" MODIFIED="1648018456799"/>
 <node TEXT="Difference: #(Y=1 | X_i) − #(Y=0 | X_i)" ID="ID_1846890822" CREATED="1648018457275" MODIFIED="1648018460120"/>
 </node>
@@ -144,6 +196,7 @@
 </node>
 </node>
 </node>
+<node TEXT="also called: mean encoding" ID="ID_1675622491" CREATED="1666644007084" MODIFIED="1666644013463"/>
 </node>
 <node TEXT="Leave-one-out encoding" ID="ID_1342903696" CREATED="1606214315723" MODIFIED="1606214323058">
 <node TEXT="similar to Target encoding, except it excludes the current row value" ID="ID_503802994" CREATED="1606214324565" MODIFIED="1606214358063"/>
@@ -151,16 +204,6 @@
 <node TEXT="Bayesian Target encoding" ID="ID_1168267478" CREATED="1606238998687" MODIFIED="1606239004857">
 <node TEXT="similar to Target encoding, but uses other statistical measures of the target variable&apos;s distribution such as its variance or its skewness" ID="ID_1942715738" CREATED="1606239007540" MODIFIED="1606239040876"/>
 </node>
-<node TEXT="Embedding" ID="ID_174643895" CREATED="1615450388732" MODIFIED="1615450391940">
-<node TEXT="convert them into numerical embeddings e.g. by using Word2Vec" ID="ID_722471093" CREATED="1615450393022" MODIFIED="1615450430742"/>
-</node>
-</node>
-<node TEXT="Ordinal (categorical, with order)" ID="ID_155757919" CREATED="1573219102517" MODIFIED="1573219117153">
-<node TEXT="Label encoding" ID="ID_254040704" CREATED="1573462042424" MODIFIED="1573462048027">
-<node TEXT="converts each string value to a whole number. The first unique value in your column becomes 1, the second becomes 2, the third becomes 3, and so on." ID="ID_327202013" CREATED="1573462407070" MODIFIED="1573462423738"/>
-</node>
-<node TEXT="Frequency encoding" ID="ID_1722989806" CREATED="1573462049069" MODIFIED="1573462052939">
-<node TEXT="replace each category with their frequency in the data" ID="ID_375194943" CREATED="1615450330453" MODIFIED="1615450341434"/>
 </node>
 </node>
 <node TEXT="Binary" ID="ID_127598949" CREATED="1573219117708" MODIFIED="1573219124679">
@@ -190,21 +233,30 @@
 <node TEXT="Categorical (TODO: in nominal/ordinal splitten)" ID="ID_327429059" CREATED="1575024237973" MODIFIED="1575024262128">
 <node TEXT="Deviation coding" ID="ID_198166846" CREATED="1575024275441" MODIFIED="1575024279247"/>
 <node TEXT="Orthogonal polynomial coding" ID="ID_1268731775" CREATED="1575024279424" MODIFIED="1575024288997"/>
-<node TEXT="Helmert coding" ID="ID_1883501728" CREATED="1575024289207" MODIFIED="1575024295754"/>
 <node TEXT="Reverse Helmert coding" ID="ID_417191733" CREATED="1575024295977" MODIFIED="1575024310455"/>
 <node TEXT="Forward difference coding" ID="ID_373844939" CREATED="1575024310658" MODIFIED="1575024321838"/>
+<node TEXT="important" ID="ID_1724113354" CREATED="1666644977557" MODIFIED="1666644980846">
+<node TEXT="Helmert encoding" ID="ID_1883501728" CREATED="1575024289207" MODIFIED="1666643855317"/>
 <node TEXT="Backward difference coding" ID="ID_1040411722" CREATED="1575024321991" MODIFIED="1575024332291"/>
+<node TEXT="james stein encoding" ID="ID_1472640560" CREATED="1666645000517" MODIFIED="1666645004240"/>
+<node TEXT="Generalized Linear Mixed Model" ID="ID_1615967285" CREATED="1666645042384" MODIFIED="1666645056413"/>
 </node>
 </node>
-<node TEXT="Links" ID="ID_959589906" CREATED="1646579451114" MODIFIED="1646579454003">
-<node TEXT="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159" ID="ID_1385333503" CREATED="1573220505844" MODIFIED="1573220520348" LINK="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159"/>
-<node TEXT="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/" ID="ID_1207546695" CREATED="1666639747840" MODIFIED="1666639747840" LINK="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/"/>
-<node TEXT="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809" ID="ID_1365245265" CREATED="1606204965199" MODIFIED="1606204971196" LINK="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809"/>
-<node TEXT="TODO: read" ID="ID_799663258" CREATED="1648016578815" MODIFIED="1648016584840">
+</node>
+<node TEXT="Links" ID="ID_959589906" CREATED="1646579451114" MODIFIED="1666639850197">
+<node TEXT="Blog posts" ID="ID_1572900431" CREATED="1666645075947" MODIFIED="1666645079414">
+<node TEXT="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159" ID="ID_1385333503" CREATED="1573220505844" MODIFIED="1666639850193" LINK="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159" HGAP_QUANTITY="14 pt" VSHIFT_QUANTITY="14.25 pt"/>
 <node TEXT="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6" ID="ID_449210345" CREATED="1648016566428" MODIFIED="1648016574780" LINK="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6"/>
 <node TEXT="https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html" ID="ID_1565219949" CREATED="1659947200594" MODIFIED="1659947200594" LINK="https://www.kdnuggets.com/2021/05/deal-with-categorical-data-machine-learning.html"/>
 <node TEXT="https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02" ID="ID_1102430802" CREATED="1659947207284" MODIFIED="1659947207284" LINK="https://towardsdatascience.com/all-about-categorical-variable-encoding-305f3361fd02"/>
 </node>
+<node TEXT="Libraries" ID="ID_374609920" CREATED="1666645089539" MODIFIED="1666645092814">
+<node TEXT="https://github.com/scikit-learn-contrib/category_encoders" ID="ID_1094777365" CREATED="1666645093597" MODIFIED="1666645093597" LINK="https://github.com/scikit-learn-contrib/category_encoders"/>
+<node TEXT="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/" ID="ID_1207546695" CREATED="1666639747840" MODIFIED="1666639747840" LINK="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/"/>
+</node>
+</node>
+<node TEXT="Paper" ID="ID_1333941575" CREATED="1666639852449" MODIFIED="1666639853388">
+<node TEXT="Pargent_2022 Regularized target encoding outperforms traditional methods.pdf" ID="ID_1521732832" CREATED="1666639995559" MODIFIED="1666639995562" LINK="../machine-learning-library/Preprocessing/Feature%20encoding/Pargent_2022%20Regularized%20target%20encoding%20outperforms%20traditional%20methods.pdf"/>
 </node>
 </node>
 <node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
