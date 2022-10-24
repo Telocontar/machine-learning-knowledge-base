@@ -114,7 +114,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Feature encoding" FOLDED="true" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
+<node TEXT="Feature encoding" ID="ID_330138821" CREATED="1572268428931" MODIFIED="1646573535265">
 <node TEXT="DataTypes" ID="ID_1265044473" CREATED="1573219055474" MODIFIED="1573219067282">
 <node TEXT="Nominal (categorical, no order)" ID="ID_752269898" CREATED="1573219068315" MODIFIED="1573219101864">
 <node TEXT="One-hot encoding" ID="ID_1072618858" CREATED="1573462060958" MODIFIED="1573462075305">
@@ -198,7 +198,7 @@
 </node>
 <node TEXT="Links" ID="ID_959589906" CREATED="1646579451114" MODIFIED="1646579454003">
 <node TEXT="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159" ID="ID_1385333503" CREATED="1573220505844" MODIFIED="1573220520348" LINK="https://towardsdatascience.com/smarter-ways-to-encode-categorical-data-for-machine-learning-part-1-of-3-6dca2f71b159"/>
-<node TEXT="https://web.archive.org/web/20160121143437/http://www.ats.ucla.edu/stat/r/library/contrast_coding.htm" ID="ID_601334506" CREATED="1573464647019" MODIFIED="1573464660539" LINK="https://web.archive.org/web/20160121143437/http://www.ats.ucla.edu/stat/r/library/contrast_coding.htm"/>
+<node TEXT="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/" ID="ID_1207546695" CREATED="1666639747840" MODIFIED="1666639747840" LINK="https://stats.oarc.ucla.edu/r/library/r-library-contrast-coding-systems-for-categorical-variables/"/>
 <node TEXT="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809" ID="ID_1365245265" CREATED="1606204965199" MODIFIED="1606204971196" LINK="https://towardsdatascience.com/stop-one-hot-encoding-your-categorical-variables-bbb0fba89809"/>
 <node TEXT="TODO: read" ID="ID_799663258" CREATED="1648016578815" MODIFIED="1648016584840">
 <node TEXT="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6" ID="ID_449210345" CREATED="1648016566428" MODIFIED="1648016574780" LINK="https://towardsdatascience.com/feature-engineering-for-machine-learning-a80d3cdfede6"/>
