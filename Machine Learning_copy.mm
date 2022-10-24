@@ -472,6 +472,10 @@
 <node TEXT="jupyter-nbextension enable rise --py --sys-prefix" ID="ID_1043020594" CREATED="1574419343531" MODIFIED="1574419361271"/>
 <node TEXT="Quickguide: View -&gt; Cell toolbar -&gt; Slideshow&#xa;Select cells as slide, sub-slide, skip etc.&#xa;Start slideshow via the Button in the toolbar" ID="ID_439226985" CREATED="1574419818781" MODIFIED="1574419877366"/>
 </node>
+<node TEXT="nb_conda_kernels" ID="ID_902309947" CREATED="1666606331130" MODIFIED="1666606335425">
+<node TEXT="python -m ipykernel install --user --name myenv --display-name &quot;Python (myenv)&quot;" ID="ID_657234015" CREATED="1666606336196" MODIFIED="1666606338040"/>
+<node TEXT="https://stackoverflow.com/a/44786736" ID="ID_350756717" CREATED="1666606351625" MODIFIED="1666606351625" LINK="https://stackoverflow.com/a/44786736"/>
+</node>
 </node>
 </node>
 <node TEXT="Tips &amp; tricks" ID="ID_942565908" CREATED="1649228085472" MODIFIED="1649228089307">
