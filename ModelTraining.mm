@@ -3,7 +3,7 @@
 <node TEXT="Model training" FOLDED="false" ID="ID_749452442" CREATED="1646569216273" MODIFIED="1665301281305" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -69,7 +69,7 @@
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="Crossvalidation" POSITION="right" ID="ID_1841838916" CREATED="1646569255531" MODIFIED="1646569259174"/>
-<node TEXT="Model engineering" FOLDED="true" POSITION="right" ID="ID_1136063772" CREATED="1646569384477" MODIFIED="1646569390022">
+<node TEXT="Model engineering" POSITION="right" ID="ID_1136063772" CREATED="1646569384477" MODIFIED="1646569390022">
 <node TEXT="Feature selection" ID="ID_1720635487" CREATED="1646573555338" MODIFIED="1646573563523">
 <node TEXT="Methods" ID="ID_573244057" CREATED="1575023150125" MODIFIED="1575023152124">
 <node TEXT="Manual selection" ID="ID_1014822725" CREATED="1575023153059" MODIFIED="1575023199187">
@@ -144,6 +144,7 @@
 </node>
 <node TEXT="Links" ID="ID_721509425" CREATED="1579008921487" MODIFIED="1579008923757">
 <node TEXT="https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0" ID="ID_616334729" CREATED="1579008924667" MODIFIED="1579008931254" LINK="https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0"/>
+<node TEXT="Effrosynidis_21 Evaluation of feature selection methods.pdf" ID="ID_764334597" CREATED="1667811913624" MODIFIED="1667811913627" LINK="../../../../Downloads/Effrosynidis_21%20Evaluation%20of%20feature%20selection%20methods.pdf"/>
 </node>
 </node>
 <node TEXT="Hyperparameter tuning" ID="ID_1475635018" CREATED="1646569392726" MODIFIED="1646574018958">
@@ -200,7 +201,7 @@
 </node>
 <node TEXT="Choosing the model" ID="ID_1828564522" CREATED="1646569404998" MODIFIED="1646569408928"/>
 </node>
-<node TEXT="Model evaluation" FOLDED="true" POSITION="right" ID="ID_598908670" CREATED="1646569414959" MODIFIED="1646569420465">
+<node TEXT="Model evaluation" POSITION="right" ID="ID_598908670" CREATED="1646569414959" MODIFIED="1646569420465">
 <node TEXT="Performance metrics" ID="ID_1292614202" CREATED="1646569421528" MODIFIED="1646569426762">
 <node TEXT="Accuracy" ID="ID_1063187839" CREATED="1610957638906" MODIFIED="1610957643236"/>
 <node TEXT="AUC of ROC" FOLDED="true" ID="ID_1409022853" CREATED="1610957643806" MODIFIED="1610957649889">
