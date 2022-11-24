@@ -221,6 +221,71 @@
 </node>
 </node>
 </node>
+<node TEXT="Overfitting" ID="ID_851752204" CREATED="1669279244930" MODIFIED="1669279248598">
+<node TEXT="detecting overfitting" ID="ID_830096032" CREATED="1669279253860" MODIFIED="1669279258766">
+<node TEXT="clear gap between train and test scores" ID="ID_361872804" CREATED="1669281874976" MODIFIED="1669281889714"/>
+<node TEXT="test score increases at some point while train score still decreases" ID="ID_966241212" CREATED="1669281890920" MODIFIED="1669281942216"/>
+</node>
+<node TEXT="dealing with overfitting" ID="ID_282639745" CREATED="1669279259103" MODIFIED="1669279262836">
+<node TEXT="dimensionality reduction" ID="ID_1941404251" CREATED="1669279274352" MODIFIED="1669279292711">
+<node TEXT="reduces number of features in the data" ID="ID_1729649337" CREATED="1669279294616" MODIFIED="1669279322707"/>
+<node TEXT="removes unnecessary noise from the data" ID="ID_821673157" CREATED="1669279323134" MODIFIED="1669279352839"/>
+</node>
+<node TEXT="feature selection" ID="ID_1067942581" CREATED="1669279354742" MODIFIED="1669279361352"/>
+<node TEXT="early stopping" ID="ID_229359517" CREATED="1669279373787" MODIFIED="1669279381952">
+<node TEXT="stop right before the model begins to overfit" ID="ID_1030473879" CREATED="1669279386196" MODIFIED="1669279395270"/>
+</node>
+<node TEXT="k-fold cross-validation" ID="ID_1110351415" CREATED="1669279397323" MODIFIED="1669279414189"/>
+<node TEXT="ensembles" ID="ID_1000049099" CREATED="1669279414528" MODIFIED="1669279421547"/>
+<node TEXT="pre-pruning" ID="ID_872461787" CREATED="1669279421885" MODIFIED="1669279439987">
+<node TEXT="specific for decision trees" ID="ID_995852520" CREATED="1669279451237" MODIFIED="1669279459693"/>
+<node TEXT="parameters" ID="ID_1170735717" CREATED="1669279459941" MODIFIED="1669279462549">
+<node TEXT="max_depth" ID="ID_762396579" CREATED="1669279466054" MODIFIED="1669279470083">
+<node TEXT="maximum depth of the tree" ID="ID_1045929491" CREATED="1669279567416" MODIFIED="1669279592262"/>
+<node TEXT="decreasing prevents overfitting" ID="ID_1702175771" CREATED="1669279483089" MODIFIED="1669279556882"/>
+</node>
+<node TEXT="min_samples_split" ID="ID_843131112" CREATED="1669279477814" MODIFIED="1669279565343">
+<node TEXT="minimum number of samples required to split an internal node" ID="ID_1121746972" CREATED="1669279604653" MODIFIED="1669279606355"/>
+<node TEXT="increasing prevents overfitting" ID="ID_1215797102" CREATED="1669279516301" MODIFIED="1669279546189"/>
+</node>
+<node TEXT="min_samples_leaf" ID="ID_1708680007" CREATED="1669279470290" MODIFIED="1669279477594">
+<node TEXT="increasing prevents overfitting" ID="ID_16198870" CREATED="1669279516301" MODIFIED="1669279546189"/>
+<node TEXT="minimum number of samples required to be at a leaf node" ID="ID_1167847751" CREATED="1669279629306" MODIFIED="1669279630250"/>
+</node>
+</node>
+</node>
+<node TEXT="post-pruning" ID="ID_1067436258" CREATED="1669279440250" MODIFIED="1669279685977">
+<node TEXT="specific for decision trees" ID="ID_292093773" CREATED="1669279698236" MODIFIED="1669279704722"/>
+<node TEXT="parameter" ID="ID_404411957" CREATED="1669279705185" MODIFIED="1669279710170">
+<node TEXT="ccp_alpha" ID="ID_1031560059" CREATED="1669279712011" MODIFIED="1669279723063">
+<node TEXT="Complexity parameter used for Minimal Cost-Complexity Pruning." ID="ID_440096176" CREATED="1669279730698" MODIFIED="1669279731547"/>
+<node TEXT="increasing prevents overfitting" ID="ID_1162048432" CREATED="1669279516301" MODIFIED="1669279546189"/>
+<node TEXT="https://scikit-learn.org/stable/modules/tree.html#minimal-cost-complexity-pruning" ID="ID_1120300529" CREATED="1669279743321" MODIFIED="1669279743321" LINK="https://scikit-learn.org/stable/modules/tree.html#minimal-cost-complexity-pruning"/>
+</node>
+</node>
+</node>
+<node TEXT="noise regularization" ID="ID_223879963" CREATED="1669279786373" MODIFIED="1669279798617">
+<node TEXT="add noise to the data" ID="ID_789647179" CREATED="1669279883977" MODIFIED="1669279888286"/>
+</node>
+<node TEXT="dropout" ID="ID_1507436184" CREATED="1669279890330" MODIFIED="1669279898250">
+<node TEXT="specific for neural networks" ID="ID_1672342088" CREATED="1669279898857" MODIFIED="1669279905651"/>
+<node TEXT="randomly remove some neurons from training by setting their weight to 0" ID="ID_157960585" CREATED="1669279905958" MODIFIED="1669279940270"/>
+</node>
+<node TEXT="L1 and L2 regularization" ID="ID_1387918567" CREATED="1669279945795" MODIFIED="1669279955640">
+<node TEXT="idea: penalize large weights (=overfitting)" ID="ID_66531794" CREATED="1669281742027" MODIFIED="1669281761705"/>
+<node TEXT="L1 (Lasso)" ID="ID_1117996921" CREATED="1669280047241" MODIFIED="1669280138903">
+<node TEXT="$\lambda \sum_{i=1}^p |\beta_j|$" ID="ID_1528211559" CREATED="1610957860127" MODIFIED="1669281690865" FORMAT="latexPatternFormat"/>
+</node>
+<node TEXT="L2 (Ridge)" ID="ID_587921697" CREATED="1669280139350" MODIFIED="1669280144504">
+<node TEXT="$\lambda \sum_{i=1}^p \beta_j^2$" ID="ID_932458671" CREATED="1610957860127" MODIFIED="1669281656103" FORMAT="latexPatternFormat"/>
+</node>
+</node>
+<node TEXT="data augmentation" ID="ID_252284708" CREATED="1669281826019" MODIFIED="1669281828586">
+<node TEXT="idea: more data -&gt; less overfitting" ID="ID_709068886" CREATED="1669281830921" MODIFIED="1669281839760"/>
+</node>
+<node TEXT="more data" ID="ID_1818083852" CREATED="1669281840639" MODIFIED="1669281847283"/>
+</node>
+</node>
 </node>
 <node TEXT="Distribution shift" POSITION="right" ID="ID_1581235214" CREATED="1653304925413" MODIFIED="1653304931943">
 <edge COLOR="#00dd00"/>
