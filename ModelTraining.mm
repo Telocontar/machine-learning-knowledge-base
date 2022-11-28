@@ -252,6 +252,11 @@
 <node TEXT="increasing prevents overfitting" ID="ID_16198870" CREATED="1669279516301" MODIFIED="1669279546189"/>
 <node TEXT="minimum number of samples required to be at a leaf node" ID="ID_1167847751" CREATED="1669279629306" MODIFIED="1669279630250"/>
 </node>
+<node TEXT="n_iter_no_change" ID="ID_685371913" CREATED="1669637471944" MODIFIED="1669637473628">
+<node TEXT="specific for gradient boosting" ID="ID_754224260" CREATED="1669637508627" MODIFIED="1669637514257"/>
+<node TEXT="used to decide if early stopping will be used to terminate training when validation score is not improving" ID="ID_1690184626" CREATED="1669637514546" MODIFIED="1669637537723"/>
+<node TEXT="lowering prevents overfitting" ID="ID_1709277659" CREATED="1669637540765" MODIFIED="1669637557892"/>
+</node>
 </node>
 </node>
 <node TEXT="post-pruning" ID="ID_1067436258" CREATED="1669279440250" MODIFIED="1669279685977">
