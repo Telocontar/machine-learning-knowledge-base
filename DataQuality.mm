@@ -3,7 +3,7 @@
 <node TEXT="Data quality" FOLDED="false" ID="ID_398083791" CREATED="1646569184847" MODIFIED="1665301223834" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.909">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -164,7 +164,7 @@
 </node>
 </node>
 <node TEXT="Imbalanced data" POSITION="right" ID="ID_513465816" CREATED="1646573065822" MODIFIED="1646573069296">
-<node TEXT="Approaches" FOLDED="true" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
+<node TEXT="Approaches" ID="ID_67917249" CREATED="1573466560555" MODIFIED="1573466565705">
 <node TEXT="Sampling methods" ID="ID_1091281845" CREATED="1582564203599" MODIFIED="1582564208774">
 <node TEXT="Over-sampling minority class" ID="ID_104875823" CREATED="1573466540754" MODIFIED="1573466551584">
 <node TEXT="" ID="ID_277873331" CREATED="1574674304900" MODIFIED="1574674304900">

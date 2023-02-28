@@ -3,7 +3,7 @@
 <node TEXT="Machine Learning" FOLDED="false" ID="ID_1251816237" CREATED="1646568408466" MODIFIED="1664435003151" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle" background="#3c3f41">
-    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -67,7 +67,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="3" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="ML Theory" POSITION="right" ID="ID_1476540800" CREATED="1646569132387" MODIFIED="1664435228734">
 <edge COLOR="#00dddd"/>
 <node TEXT="Data types" ID="ID_120777340" CREATED="1646575004553" MODIFIED="1646575007875">
@@ -107,7 +107,14 @@
 <node TEXT="Clustering" ID="ID_1790334511" CREATED="1646574866832" MODIFIED="1646574888237"/>
 <node TEXT="Coding" ID="ID_267955175" CREATED="1646577237626" MODIFIED="1646577239524">
 <node TEXT="Jupyter notebooks" ID="ID_1924944886" CREATED="1646577242739" MODIFIED="1646577245644"/>
-<node TEXT="Repository structure" ID="ID_78662667" CREATED="1646577335905" MODIFIED="1646577341955"/>
+<node TEXT="Repository structure" ID="ID_78662667" CREATED="1646577335905" MODIFIED="1646577341955">
+<node TEXT="Example" FOLDED="true" ID="ID_748915938" CREATED="1610384063935" MODIFIED="1610384070064">
+<node TEXT="" ID="ID_960559032" CREATED="1610383835906" MODIFIED="1610384039074">
+<hook URI="images/Practical%20Experience/Programming%20Practices/Repository_structure.png" SIZE="0.72115386" NAME="ExternalObject"/>
+</node>
+</node>
+<node TEXT="https://drivendata.github.io/cookiecutter-data-science/" ID="ID_787609348" CREATED="1610383876058" MODIFIED="1610383882080" LINK="https://drivendata.github.io/cookiecutter-data-science/"/>
+</node>
 </node>
 <node TEXT="Learning material" ID="ID_516745377" CREATED="1646577298309" MODIFIED="1646577301160">
 <node TEXT="Courses" ID="ID_172456561" CREATED="1646577301838" MODIFIED="1646577303664"/>
@@ -116,6 +123,9 @@
 </node>
 <node TEXT="Visualization" ID="ID_1112897312" CREATED="1646577371323" MODIFIED="1646577376397"/>
 <node TEXT="Good practices" ID="ID_920224894" CREATED="1646577400950" MODIFIED="1646577411407"/>
+<node TEXT="Libraries" ID="ID_385124459" CREATED="1677570878959" MODIFIED="1677570878960" LINK="Libraries.mm">
+<edge STYLE="bezier" COLOR="#dd0000" WIDTH="1"/>
+</node>
 </node>
 </node>
 </map>

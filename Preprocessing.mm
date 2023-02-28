@@ -3,7 +3,7 @@
 <node TEXT="Preprocessing" FOLDED="false" ID="ID_492143138" CREATED="1646569150108" MODIFIED="1665301251042" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#00dddd" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41" zoom="0.932">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -259,7 +259,7 @@
 <node TEXT="Pargent_2022 Regularized target encoding outperforms traditional methods.pdf" ID="ID_1521732832" CREATED="1666639995559" MODIFIED="1666639995562" LINK="../machine-learning-library/Preprocessing/Feature%20encoding/Pargent_2022%20Regularized%20target%20encoding%20outperforms%20traditional%20methods.pdf"/>
 </node>
 </node>
-<node TEXT="Feature engineering" FOLDED="true" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
+<node TEXT="Feature engineering" ID="ID_1294649165" CREATED="1646573520455" MODIFIED="1646573531041">
 <node TEXT="Process of using domain knowledge of the data to create features (manually or automatic)" ID="ID_1306715748" CREATED="1578931070053" MODIFIED="1578931187700">
 <node TEXT="Manually" ID="ID_376617437" CREATED="1579090025952" MODIFIED="1579090030004">
 <node TEXT="Combining features" ID="ID_679043910" CREATED="1664735801259" MODIFIED="1664735817190">
@@ -319,11 +319,11 @@
 </node>
 </node>
 </node>
-<node TEXT="Data imputation" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
+<node TEXT="Data imputation" FOLDED="true" POSITION="right" ID="ID_159135750" CREATED="1646569204912" MODIFIED="1646569210402">
 <node TEXT="Links" FOLDED="true" ID="ID_1298192274" CREATED="1571675962987" MODIFIED="1571675964441">
 <node TEXT="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf" ID="ID_753824408" CREATED="1582125310384" MODIFIED="1582125320854" LINK="https://stefvanbuuren.name/Winnipeg/Lectures/WinnipegHandout.pdf"/>
 </node>
-<node TEXT="Approaches" FOLDED="true" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
+<node TEXT="Approaches" ID="ID_1539310187" CREATED="1573469785152" MODIFIED="1646574387831">
 <node TEXT="Mean/Mode" ID="ID_125707353" CREATED="1571934695780" MODIFIED="1571934722262">
 <node TEXT="Approach" ID="ID_1240159266" CREATED="1582125167753" MODIFIED="1582125170080">
 <node TEXT="Replace the missing values by the mean/mode (=most frequent value) of the observed data" ID="ID_1736376129" CREATED="1582125191352" MODIFIED="1582125211720"/>

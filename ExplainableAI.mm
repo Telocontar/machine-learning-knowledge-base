@@ -3,7 +3,7 @@
 <node TEXT="Explainable AI" FOLDED="false" ID="ID_1898418498" CREATED="1646569220753" MODIFIED="1665301290938" LINK="Root.mm">
 <edge STYLE="bezier" COLOR="#dd0000" WIDTH="1" DASH="SOLID"/>
 <hook NAME="MapStyle" background="#3c3f41">
-    <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm"/>
+    <properties edgeColorConfiguration="#808080ff,#00ddddff,#dddd00ff,#dd0000ff,#00dd00ff,#dd0000ff,#7cddddff,#dddd7cff,#dd7cddff,#7cdd7cff,#dd7c7cff,#7c7cddff" associatedTemplateLocation="template:/Darcula-1.7.mm" fit_to_viewport="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24 pt">
@@ -68,9 +68,9 @@
 </map_styles>
 </hook>
 <hook NAME="AutomaticEdgeColor" COUNTER="5" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Allgemein" POSITION="right" ID="ID_1032287422" CREATED="1574956370703" MODIFIED="1646580075905">
+<node TEXT="General" POSITION="right" ID="ID_1032287422" CREATED="1574956370703" MODIFIED="1677570108789">
 <edge COLOR="#00dd00"/>
-<node TEXT="Methods" FOLDED="true" ID="ID_1586052403" CREATED="1574956436632" MODIFIED="1574956439036">
+<node TEXT="Methods" ID="ID_1586052403" CREATED="1574956436632" MODIFIED="1574956439036">
 <node TEXT="Model-agnostic methods" ID="ID_1235018201" CREATED="1575299632978" MODIFIED="1575299643164">
 <node TEXT="Proxy model&#xa;(behaves similarly to the original model, but in a way that is easier to explain)" ID="ID_278803416" CREATED="1574956578766" MODIFIED="1574956624228">
 <node TEXT="Linear Proxy Models" ID="ID_243223228" CREATED="1574956695886" MODIFIED="1574956701939">
