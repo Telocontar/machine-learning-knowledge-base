@@ -276,6 +276,28 @@
 </node>
 <node TEXT="Active learning" ID="ID_209635071" CREATED="1582564418989" MODIFIED="1582564424427">
 <node TEXT="select instances from a random set of training data" ID="ID_1854049775" CREATED="1582564433330" MODIFIED="1582564532799"/>
+<node TEXT="usually finds instances close to the decision boundary" ID="ID_1919767131" CREATED="1678086194759" MODIFIED="1678086297545"/>
+</node>
+<node TEXT="Layered learning" ID="ID_923437395" CREATED="1678086143943" MODIFIED="1678086151140">
+<node TEXT="models the data in two stages:&#xa;1) learns to distinguish cases close to the decision boundary from cases which are clearly from the majority class (separation defined using hierarchical clustering)&#xa;2) use instances close to decision boundary and instances from minority class to solve original predictive task" ID="ID_1879379251" CREATED="1678086152610" MODIFIED="1678086464181"/>
+<node TEXT="Paper: Automated Imbalanced Classification via Layered&#xa;Learning" ID="ID_1912069241" CREATED="1678086491600" MODIFIED="1678086494378">
+<node TEXT="https://arxiv.org/pdf/2205.02553.pdf" ID="ID_1989767063" CREATED="1678086473684" MODIFIED="1678086473684" LINK="https://arxiv.org/pdf/2205.02553.pdf"/>
+</node>
+<node TEXT="Article: How to Tackle Class Imbalance Without Resampling" ID="ID_1906402548" CREATED="1678086504722" MODIFIED="1678086511962">
+<node ID="ID_1172668159" CREATED="1678086515796" MODIFIED="1678086515796" LINK="https://towardsdatascience.com/how-to-tackle-class-imbalance-without-resampling-47bbeb2180aa"><richcontent TYPE="NODE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <a href="https://towardsdatascience.com/how-to-tackle-class-imbalance-without-resampling-47bbeb2180aa">How to Tackle Class Imbalance Without Resampling | by Vitor Cerqueira | Mar, 2023 | Towards Data Science</a>
+  </body>
+</html>
+
+</richcontent>
+</node>
+</node>
 </node>
 <node TEXT="proper metric" ID="ID_1862678600" CREATED="1654267639120" MODIFIED="1654267643838">
 <node TEXT="Most of the time, just selecting the decision threshold of the model trained over imbalanced data based on the metric of interest is enough." ID="ID_1267670952" CREATED="1654267698376" MODIFIED="1654267716091"/>
